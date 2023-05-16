@@ -6,4 +6,8 @@
 
 @layer base {
   @import '../../common/root';
+
+  html {
+    font-family: 'lato-regular' !important;
+  }
 }
