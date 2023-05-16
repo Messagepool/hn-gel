@@ -1,0 +1,9 @@
+@import './variables';
+@import './vendors/tailwind';
+@import './functions';
+@import './mixins';
+@import './fonts';
+
+@layer base {
+  @import '../../common/root';
+}
