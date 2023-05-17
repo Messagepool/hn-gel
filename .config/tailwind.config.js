@@ -1,27 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+// import { fontFamily, fontSize, colors } from './.tailwind/presets';
+// console.log(fontFamily,fontSize, colors);
+
 module.exports = {
+  preset: [
+    require('./.tailwind/presets.js')
+  ],
   content: ['*.html'],
-  theme: {
-    extend: {
-      fontSize: {
-        xs: [
-          'var(--fontsize-xs)',
-          { lineHeight: 'var(--fontsize-lineheight-xs)' },
-        ],
-        sm: [
-          'var(--fontsize-sm)',
-          { lineHeight: 'var(--fontsize-lineheight-sm)' },
-        ],
-        base: [
-          'var(--fontsize-base)',
-          { lineHeight: 'var(--fontsize-lineheight-base)' },
-        ],
-        lg: [
-          'var(--fontsize-lg)',
-          { lineHeight: 'var(--fontsize-lineheight-lg)' },
-        ],
-      }
-    },
-  },
-  plugins: [],
 };
