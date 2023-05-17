@@ -15,7 +15,6 @@
   --fontsize-lineheight-lg: #{$fontsize-lineheight-lg};
 
   @each $presetName, $presetValue in $color-presets {
-
     @each $color, $value in map-get($colorset, #{$presetValue}) {
       @if $color == 'default' {
         --color-#{$presetValue}: #{$value};
