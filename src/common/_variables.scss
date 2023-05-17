@@ -303,4 +303,17 @@ $color-alertcriticals: (
   '900': $color-alertcritical-900,
 );
 
+$colorset: (
+  'brand': $color-brands,
+  'primary': $color-primaries,
+  'secondary': $color-secondaries,
+  'ui': $color-uis,
+  'decorative': $color-decoratives,
+  'tints': $color-tints,
+  'light': $color-lights,
+  'interactive': $color-interactives,
+  'alertinto': $color-alertinfos,
+  'alertsuccess': $color-alertsuccesses,
+  'alertcritical': $color-alertcriticals
+);
 /** end colors **/
