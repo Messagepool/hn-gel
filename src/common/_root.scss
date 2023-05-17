@@ -1,5 +1,5 @@
 :root {
-  --fontsize-xs: #{fontsize-xs};
+  --fontsize-xs: #{$fontsize-xs};
   --fontsize-lineheight-xs: #{$fontsize-lineheight-xs};
 
   --fontsize-sm: #{$fontsize-sm};
