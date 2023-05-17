@@ -40,13 +40,12 @@ const fontSize = {
 
 colorPresets.forEach(preset => {
     colors[preset] = {
-        'DEFAULT': `var(--color-${preset}-default)`
+        'DEFAULT': `var(--color-${preset})`
     };
     for(let i=100; i<=900; i+=100) {
       colors[preset][i] = `var(--color-${preset}-${i})`;
     }
 });
-
 
 module.exports = {
   theme: {

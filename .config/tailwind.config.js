@@ -3,8 +3,8 @@
 // console.log(fontFamily,fontSize, colors);
 
 module.exports = {
-  preset: [
+  presets: [
     require('./.tailwind/presets.js')
   ],
-  content: ['*.html'],
+  content: ['*.html']
 };

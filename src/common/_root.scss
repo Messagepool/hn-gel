@@ -16,7 +16,11 @@
 
   @each $presetName, $presetValue in $color-presets {
     @each $color, $value in $color-brands {
-      --color-#{$presetValue}-#{$color}: #{$value};
+      @if $color == default {
+        --color-#{$presetValue}: #{$value};
+      } @else {
+        --color-#{$presetValue}-#{$color}: #{$value};
+      }
     }
   }
 }
