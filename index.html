@@ -24,5 +24,144 @@
       !@#$¢%&*©®™£
       </p>
     </div>
+    <h1>Form Elements</h1>
+
+    <h2 class="text-lg">Checkboxes</h2>
+    <h3 class="text-xl">Regular</h3>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-default" class="form-checkbox"/>
+      <label for="checkbox-default">Default</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-active" checked class="form-checkbox"/>
+      <label for="checkbox-active">Active</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-focus" focused class="form-checkbox"/>
+      <label for="checkbox-focus">Focus</label>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-default" disabled class="form-checkbox"/>
+      <label for="checkbox-default">Disabled</label>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-error" required class="form-checkbox peer"/>
+      <label for="checkbox-error">Error</label>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
+    <h3 class="text-xl">Small</h3>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-default-sm" class="form-checkbox small"/>
+      <label for="checkbox-default-sm">Default</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-active-sm" checked class="form-checkbox small"/>
+      <label for="checkbox-active-sm">Active</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-focus-sm" focused class="form-checkbox small"/>
+      <label for="checkbox-focus-sm">Focus</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-default-sm" disabled class="form-checkbox small"/>
+      <label for="checkbox-default-sm">Disabled</label>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="checkbox-error-sm" required class="form-checkbox small peer"/>
+      <label for="checkbox-error-sm">Error</label>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
+    <hr class="my-4"/>
+
+    <h2 class="text-lg">Radios</h2>
+    <h3 class="text-xl">Regular</h3>
+    <div class="form-group">
+      <input type="radio" id="radio-default" class="form-radio" />
+      <label for="radio-default">Default</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-active" checked class="form-radio" />
+      <label for="radio-active">Active</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-focus" class="form-radio" />
+      <label for="radio-focus">Focus</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-disabled" disabled class="form-radio" />
+      <label for="radio-disabled">Disabled</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-error" class="form-radio peer" name="radio-error" value="" required/>
+      <label for="radio-error">Error</label>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+    
+
+    
+    <h3 class="text-xl">Small</h3>
+    <div class="form-group">
+      <input type="radio" id="radio-default-sm" class="form-radio small" />
+      <label for="radio-default-sm">Default</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-active-sm" checked class="form-radio small" />
+      <label for="radio-active-sm">Active</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-focus-sm" class="form-radio small" />
+      <label for="radio-focus-sm">Focus</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-disabled-sm" disabled class="form-radio small" />
+      <label for="radio-disabled-sm">Disabled</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" id="radio-error-sm" class="form-radio peer small" name="radio-error" value="" required/>
+      <label for="radio-error-sm">Error</label>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
+    <hr>
+
+    <h2>Input</h2>
+    <h3>Regular</h3>
+    <h4>Small</h4>
+    <hr>
+
+    <h2>Dropdown</h2>
+    <h3>Regular</h3>
+    <h4>Small</h4>
+    <hr>
+
+    <script type="text/javascript">
+        // Just to force this element to focus
+        document.querySelector('#checkbox-focus').focus();
+      </script>
   </body>
 </html>
