@@ -46,4 +46,9 @@ module.exports = {
       fontSize,
     },
   },
+  plugins: [
+    require('@tailwindcss/forms')({
+      strategy: 'class'
+    })
+  ]
 };
