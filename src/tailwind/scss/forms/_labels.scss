@@ -1,7 +1,7 @@
 // TODO: Apply scss here
-input.form-checkbox.small + label,
-input.form-radio + label,
-input.form-input + label {
+input.form-checkbox--small + label,
+input.form-radio--small + label,
+input.form-input--small + label {
   @apply text-sm
 }
 
