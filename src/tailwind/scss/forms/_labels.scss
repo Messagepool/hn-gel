@@ -1,0 +1,12 @@
+input.form-checkbox.small + label,
+input.form-radio + label,
+input.form-input + label {
+  @apply text-sm
+}
+
+
+input[disabled].form-checkbox + label,
+input[disabled].form-radio + label,
+input[disabled].form-input + label {
+  @apply text-primary
+}

@@ -1,0 +1,25 @@
+input.form-checkbox,
+input.form-radio {
+  @apply disabled:border-decorative;
+  @apply checked:border-alertinteractive;
+  @apply focus:border-alertinteractive focus:shadow-2xl;
+  @apply active:shadow-none;
+  @apply invalid:border-alertcritical;
+}
+
+input.form-checkbox {
+  @apply border-ui border-2 rounded-sm mr-2 p-0;
+}
+
+input.form-checkbox.small {
+  @apply h-[--fontsize-sm] mr-1;
+}
+
+input.form-radio {
+  @apply border-2 align-middle mr-1 p-2;
+  @apply disabled:border-decorative;
+}
+
+input.form-radio.small {
+  @apply p-1
+}
