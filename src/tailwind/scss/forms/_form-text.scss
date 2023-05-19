@@ -1,0 +1,38 @@
+@use './../mixins' as mixins;
+
+// TODO: Convert padding values to variables
+.form-input {
+  @include mixins.form-attribute;
+  @apply block px-[17px] py-[13px] h-[50px] min-w-[343px];
+  @apply border text-primary placeholder-secondary focus:shadow-xl;
+}
+
+.form-input--small {
+  @extend .form-input;
+  @apply px-[9px] py-[10px] h-[44px];
+}
+
+.form-select {
+  @extend .form-input;
+  & > option.disabled {
+    @apply text-decorative
+  }
+}
+
+.form-select--small {
+  @extend .form-select;
+  @apply px-[9px] py-[10px] h-[44px];
+}
+
+// TODO: Need to fix styling colors for smart input, this doesnt work
+.form-input--smart {
+  @extend .form-input;
+  @apply placeholder-transparent active:border-primary;
+  @apply active:border-alertinteractive focus:border-alertinteractive border-primary;
+}
+
+.form-input--smart:active,
+.form-input--smart:focus {
+  @apply border-[--color-interactive]; 
+}
+

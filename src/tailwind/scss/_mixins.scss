@@ -4,7 +4,7 @@
 @mixin form-attribute {
   @apply disabled:border-decorative;
   @apply checked:border-alertinteractive;
-  @apply focus:border-alertinteractive focus:shadow-2xl;
+  @apply focus:border-alertinteractive focus:shadow-2xl active:border-alertinteractive;
   @apply active:shadow-none;
-  @apply invalid:border-alertcritical;
+  @apply invalid:border-alertcritical invalid:text-alertcritical;
 }

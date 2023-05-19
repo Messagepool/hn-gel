@@ -5,9 +5,23 @@ input.form-input--small + label {
   @apply text-sm
 }
 
+label {
+  @apply text-primary;
+}
 
 input[disabled].form-checkbox + label,
 input[disabled].form-radio + label,
 input[disabled].form-input + label {
   @apply text-primary
+}
+
+
+label:has(~ .form-input--smart){
+  @apply absolute mt-[12px] ml-[18px] transition-all ease-in duration-[0.15];
+}
+
+label:has(~ .form-input--smart:not(:placeholder-shown)),
+label:has(~ .form-input--smart:active),
+label:has(~ .form-input--smart:focus) {
+  @apply mt-1 text-xs;
 }
