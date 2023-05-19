@@ -149,15 +149,204 @@
 
     <hr>
 
-    <h2>Input</h2>
-    <h3>Regular</h3>
+    <!-- Form Elements : Input -->
+    <h2 class="text-lg">Input</h2>
+    <h3 class="text-xl">Smart Labels</h3>
+    <div class="form-group">
+      <label for="text-smart-default">Form Label</label>
+      <input type="text" id="text-smart-default" placeholder="Placeholder" class="form-input--smart"/>
+    </div>
+    <div class="form-group">
+      <label for="text-smart-active">Form Label</label>
+      <input type="text" id="text-smart-active" value="Text typed by user" placeholder="Placeholder" class="form-input--smart"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-smart-value">Form Label</label>
+      <input type="text" id="text-smart-value" placeholder="Placeholder" class="form-input--smart"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-smart-focus">Form Label</label>
+      <input type="text" id="text-smart-focus" placeholder="Placeholder" class="form-input--smart"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-smart-disabled">Form Label</label>
+      <input type="text" id="text-smart-disabled" disabled placeholder="Placeholder" class="form-input--smart"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-smart-error">Form Label</label>
+      <input type="text" id="text-smart-error" minlength=1 value="Text typed by user" placeholder="Placeholder" class="form-input--smart"/>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
+    <h3 class="text-xl">Regular</h3>
+    <div class="form-group">
+      <label for="text-default">Form Label</label>
+      <input type="text" id="text-default" placeholder="Placeholder" class="form-input"/>
+    </div>
+    <div class="form-group">
+      <label for="text-active">Form Label</label>
+      <input type="text" id="text-active" value="Text typed by user" class="form-input"/>
+    </div>
+    <div class="form-group">
+      <label for="text-focus">Form Label</label>
+      <input type="text" id="text-focus" focused placeholder="Placeholder" class="form-input"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-active">Form Label</label>
+      <input type="text" id="text-active" focused placeholder="Placeholder" class="form-input"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-default">Form Label</label>
+      <input type="text" id="text-default" disabled placeholder="Placeholder" class="form-input"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-error">Form Label</label>
+      <input type="text" id="text-error" required placeholder="Placeholder" class="form-input peer"/>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
     <h4>Small</h4>
+    <div class="form-group">
+      <label for="text-default">Form Label</label>
+      <input type="text" id="text-default" placeholder="Placeholder" class="form-input--small"/>
+    </div>
+    <div class="form-group">
+      <label for="text-active">Form Label</label>
+      <input type="text" id="text-active" value="Text typed by user" class="form-input--small"/>
+    </div>
+    <div class="form-group">
+      <label for="text-focus">Form Label</label>
+      <input type="text" id="text-focus" focused placeholder="Placeholder" class="form-input--small"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-active">Form Label</label>
+      <input type="text" id="text-active" focused placeholder="Placeholder" class="form-input--small"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-default">Form Label</label>
+      <input type="text" id="text-default" disabled placeholder="Placeholder" class="form-input--small"/>
+    </div>
+
+    <div class="form-group">
+      <label for="text-error">Form Label</label>
+      <input type="text" id="text-error" required placeholder="Placeholder" class="form-input--small peer"/>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
+
     <hr>
 
-    <h2>Dropdown</h2>
-    <h3>Regular</h3>
-    <h4>Small</h4>
+    <!-- Form elements: Dropdown -->
+    <h2 class="text-lg">Dropdown</h2>
+    <h3 class="text-xl">Regular</h3>
+    <div class="form-group">
+      <label for="dropdown-default">Form Label</label>
+      <select id="dropdown-default" aria-placeholder="Select Option" class="form-select">
+        <option value="" default>Select Option</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dropdown-active">Form Label</label>
+      <select class="form-select">
+        <option value="" disabled>Select Option</option>
+        <option selected>Choose Selection</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dropdown-focus">Form Label</label>
+      <select class="form-select">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-active">Form Label</label>
+      <select class="form-select">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-default">Form Label</label>
+      <select class="form-select">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-error">Form Label</label>
+      <select id="dropdown-error" class="form-select peer" required>
+        <option value="" disabled selected>Select Option</option>
+      </select>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
     <hr>
+
+    <h3 class="text-xl">Small</h3>
+    <div class="form-group">
+      <label for="dropdown-default">Form Label</label>
+      <select id="dropdown-default" aria-placeholder="Select Option" class="form-select--small">
+        <option value="" default>Select Option</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dropdown-active">Form Label</label>
+      <select class="form-select--small">
+        <option value="" disabled>Select Option</option>
+        <option selected>Choose Selection</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dropdown-focus">Form Label</label>
+      <select class="form-select--small">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-active">Form Label</label>
+      <select class="form-select--small">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-default">Form Label</label>
+      <select class="form-select--small">
+        <option value="" disabled selected>Select Option</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown-error">Form Label</label>
+      <select id="dropdown-error" class="form-select--small peer" required>
+        <option value="" disabled selected>Select Option</option>
+      </select>
+      <p class="peer-invalid:visible form-error">
+        <span class="material-icons">error_outline</span>
+        This is an error message
+      </p>
+    </div>
 
     <script type="text/javascript">
         // Just to force this element to focus
