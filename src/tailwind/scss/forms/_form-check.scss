@@ -1,13 +1,7 @@
-.form-check {
-  @apply disabled:border-decorative;
-  @apply checked:border-alertinteractive;
-  @apply focus:border-alertinteractive focus:shadow-2xl;
-  @apply active:shadow-none;
-  @apply invalid:border-alertcritical;
-}
+@use "./../mixins" as mixins;
 
 .form-checkbox {
-  @extend .form-check;
+  @include mixins.form-attribute;
   @apply border-ui border-2 rounded-sm mr-2 p-0;
 }
 
@@ -17,7 +11,7 @@
 }
 
 .form-radio {
-  @extend .form-check;
+  @include mixins.form-attribute;
   @apply border-2 align-middle mr-1 p-2;
   @apply disabled:border-decorative;
 }

@@ -1,1 +1,10 @@
 @import '../../common/mixins';
+
+// TODO: Convert to function for dynamic approach
+@mixin form-attribute {
+  @apply disabled:border-decorative;
+  @apply checked:border-alertinteractive;
+  @apply focus:border-alertinteractive focus:shadow-2xl;
+  @apply active:shadow-none;
+  @apply invalid:border-alertcritical;
+}
