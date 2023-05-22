@@ -1,22 +1,22 @@
 @use "./../mixins" as mixins;
 
-.form-checkbox {
-  @include mixins.form-attribute;
-  @apply border-ui border-2 rounded-sm mr-2 p-0;
+input[type=checkbox].form-checkbox {
+  @include mixins.form-state($form-field-states);
+  @apply border-2 rounded-sm mr-2 p-0;
 }
 
-.form-checkbox--small {
+input[type=checkbox].form-checkbox--small {
   @extend .form-checkbox;
-  @apply h-[--fontsize-sm] mr-1;
+  @apply mr-1;
+  height: var(--form-checkbox-small-height);
 }
 
-.form-radio {
-  @include mixins.form-attribute;
+input[type=radio].form-radio {
+  @include mixins.form-state($form-field-states);
   @apply border-2 align-middle mr-1 p-2;
-  @apply disabled:border-decorative;
 }
 
-.form-radio--small {
+input[type=radio].form-radio--small {
   @extend .form-radio;
   @apply p-1;
 }

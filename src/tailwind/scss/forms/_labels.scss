@@ -1,20 +1,16 @@
-// TODO: Apply scss here
-input.form-checkbox--small + label,
-input.form-radio--small + label,
-input.form-input--small + label {
-  @apply text-sm
-}
+@use './../mixins' as mixins;
 
 label {
   @apply text-primary;
 }
 
-input[disabled].form-checkbox + label,
-input[disabled].form-radio + label,
-input[disabled].form-input + label {
-  @apply text-primary
+@include mixins.form-label($form-type-selectors-small){
+  @apply text-sm;
 }
 
+@include mixins.form-label-state($form-type-selectors, 'disabled'){
+  @apply text-decorative;
+}
 
 label:has(~ .form-input--smart){
   @apply absolute mt-[12px] ml-[18px] transition-all ease-in duration-[0.15];
