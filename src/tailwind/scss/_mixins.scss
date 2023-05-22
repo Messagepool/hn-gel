@@ -1,10 +1,37 @@
+@use 'sass:map';
+@use 'sass:string';
 @import '../../common/mixins';
 
-// TODO: Convert to function for dynamic approach
-@mixin form-attribute {
-  @apply disabled:border-decorative;
-  @apply checked:border-alertinteractive;
-  @apply focus:border-alertinteractive focus:shadow-2xl active:border-alertinteractive;
-  @apply active:shadow-none;
-  @apply invalid:border-alertcritical invalid:text-alertcritical;
+
+// usage: form-state((disabled: 'border-decorative', invalid: 'border-alertcritical'))
+@mixin form-state($states : ()){
+  @each $state, $classes in $states {
+    @each $class in string.split($classes, ' '){
+      @if($state == 'default'){
+        @apply #{$class}
+      }
+      @else {
+        @apply #{$state}:#{$class};
+      }
+    }
+  }
+}
+
+// usage: form-label( ('checkbox', 'radio', ..) , 'small')
+@mixin form-label($formfieldSelectors){
+  @each $formfieldSelector in $formfieldSelectors {
+    #{$formfieldSelector} ~ label {
+      @content;
+    }
+  }
+}
+
+@mixin form-label-state($inputSelectors, $state){
+  @each $inputSelector in $inputSelectors {
+    @warn 'label:has(~ #{$inputSelector}:#{$state})';
+    label:has(~ #{$inputSelector}:#{$state}), 
+    #{$inputSelector}:#{$state} ~ label {
+      @content;
+    }
+  }
 }
