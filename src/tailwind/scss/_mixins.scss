@@ -28,7 +28,6 @@
 
 @mixin form-label-state($inputSelectors, $state){
   @each $inputSelector in $inputSelectors {
-    @warn 'label:has(~ #{$inputSelector}:#{$state})';
     label:has(~ #{$inputSelector}:#{$state}), 
     #{$inputSelector}:#{$state} ~ label {
       @content;
