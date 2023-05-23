@@ -1,44 +1,7 @@
-@use 'sass:list';
 @import '../../common/variables';
-
-$form-checkbox: '.form-checkbox';
-$form-radio: '.form-radio';
-$form-input: '.form-input';
-$form-select: '.form-select';
-$form-checkbox-small: '.form-checkbox--small';
-$form-radio-small: '.form-radio--small';
-$form-input-small: '.form-input--small';
-$form-select-small: '.form-select--small';
-$form-input-smart: '.form-input--smart';
-
-$form-type-selectors: (
-  $form-checkbox,
-  $form-radio,
-  $form-input,
-  $form-select,
-  $form-checkbox-small,
-  $form-radio-small,
-  $form-input-small,
-  $form-select-small
-);
-
-$form-type-selectors-small: (
-  $form-checkbox-small,
-  $form-radio-small,
-  $form-input-small,
-  $form-select-small
-);
-
-$form-input-regular-padding:  17px 13px;
-$form-input-regular-min-width: 343px;
-$form-input-small-height: 44px;
-$form-input-small-padding: 10px 9px;
-$form-checkbox-small-height: 14px;
-
-$form-field-states: (
-  'default': 'border-ui',
-  'disabled': 'border-decorative',
-  'checked': 'border-alertinteractive',
-  'focus': 'border-alertinteractive shadow-2xl',
-  'invalid': 'border-alertcritical text-alertcritical'
-);
+// TODO: This should be configurable from core
+$form-input-regular-padding: 1.0625em 0.8125em;// 17px 13px;
+$form-input-regular-min-width: 21.4em;//343px
+$form-input-small-height: 2.75em; // 44px
+$form-input-small-padding: 0.625em 0.56em; //10px 9px;
+$form-checkbox-small-height: 0.875em;//14px;
