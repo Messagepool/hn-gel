@@ -7,6 +7,15 @@
 @layer base {
   @import '../../common/root';
 
+  :root {
+    // TODO: Better form variable structure
+    --form-input-regular-padding: #{$form-input-regular-padding};
+    --form-input-regular-min-width: #{$form-input-regular-min-width};
+    --form-input-small-height: #{$form-input-small-height};
+    --form-input-small-padding: #{$form-input-small-padding};
+    --form-checkbox-small-height: #{$form-checkbox-small-height};
+  }
+
   html {
     font-family: 'lato-regular' !important;
   }
