@@ -1,10 +1,26 @@
 @use './../mixins' as mixins;
 
 .form-select {
-  @include mixins.form-state($form-field-states);
   @apply block border text-primary placeholder-secondary focus:shadow-xl;
+  // TODO: Padding and spacing should be configurable from core
   padding: var(--form-input-regular-padding);
   min-width: var(--form-input-regular-min-width);
+
+  &:disabled {
+    @apply border-decorative;
+  }
+
+  &:checked {
+    @apply border-alertinteractive;
+  }
+
+  &:focus {
+    @apply border-alertinteractive shadow-2xl;
+  }
+
+  &:invalid {
+    @apply border-alertcritical text-alertcritical;
+  }
 
   & > option.disabled {
     @apply text-decorative
@@ -17,15 +33,4 @@
   height: var(--form-input-small-height);
 }
 
-// TODO: Need to fix styling colors for smart input, this doesnt work
-input[type=text].form-input--smart {
-  @extend .form-input;
-  @apply placeholder-transparent active:border-primary;
-  @apply active:border-alertinteractive focus:border-alertinteractive border-primary;
-}
-
-input[type=text].form-input--smart:active,
-input[type=text].form-input--smart:focus {
-  @apply border-[--color-interactive]; 
-}
 
