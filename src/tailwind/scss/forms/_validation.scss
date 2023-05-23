@@ -1,37 +1,10 @@
-// TODO: Apply scss here
 .form-error {
   @apply mt-2 invisible text-alertcritical;
   & > .material-icons {
     @apply align-middle;
   }
-}
 
-:invalid {
-  ~ label {
-     @apply text-alertcritical;
+  input ~ & {
+    @apply text-sm;
   }
 }
-
-input.form-checkbox:invalid + label,
-input.form-radio:invalid + label {
-  @apply text-alertcritical
-}
-
-input.form-checkbox ~ .form-error .material-icons,
-input.form-input ~ .form-error .material-icons,
-input.form-radio ~ .form-error .material-icons {
-  @apply align-middle;
-}
-
-input.form-checkbox-sm + label,
-input.form-radio-sm + label, 
-input.form-input-sm + label {
-  @apply text-sm;
-}
-
-input.form-checkbox ~ .form-error,
-input.form-radio ~ .form-error,
-input.form-input ~ .form-error {
-  @apply text-sm;
-}
-
