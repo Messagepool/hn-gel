@@ -1,23 +1,27 @@
 @use './../mixins' as mixins;
 
-label {
+label.form-label {
   @apply text-primary;
-}
 
-@include mixins.form-label($form-type-selectors-small){
-  @apply text-sm;
-}
+  :invalid ~ & {
+    @apply text-alertcritical;
+  }
 
-@include mixins.form-label-state($form-type-selectors, 'disabled'){
-  @apply text-decorative;
-}
+  :disabled ~ & {
+    @apply text-decorative;
+  }
 
-label:has(~ .form-input--smart){
-  @apply absolute mt-[12px] ml-[18px] transition-all ease-in duration-[0.15];
-}
+  &:has(~ .form-input:disabled) {
+    @apply text-decorative;
+  }
 
-label:has(~ .form-input--smart:not(:placeholder-shown)),
-label:has(~ .form-input--smart:active),
-label:has(~ .form-input--smart:focus) {
-  @apply mt-1 text-xs;
+  &:has(~ .form-input--smart){
+    @apply absolute mt-[12px] ml-[18px] transition-all ease-in duration-[0.15];
+  }
+
+  &:has(~ .form-input--smart:active),
+  &:has(~ .form-input--smart:focus),
+  &:has(~ .form-input--smart:not(:placeholder-shown)) {
+    @apply mt-1 text-xs;
+  }
 }
