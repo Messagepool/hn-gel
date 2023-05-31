@@ -1,0 +1,10 @@
+.form-error {
+  @apply mt-2 invisible text-alertcritical;
+  & > .material-icons {
+    @apply align-middle;
+  }
+
+  input ~ & {
+    @apply text-sm;
+  }
+}

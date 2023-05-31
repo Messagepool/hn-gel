@@ -1,0 +1,319 @@
+/** FONTS **/
+$font-lato-regular: 'lato-regular';
+$font-lato-regular-weight: 400;
+$font-lato-bold: 'lato-bold';
+$font-lato-bold-weight: 700;
+$font-avenir: 'avenir';
+$font-avenir-weight: 500;
+/** END FONTS **/
+
+/** Font Sizing **/
+$fontsize-xs: 0.75rem;
+$fontsize-lineheight-xs: 0.75rem;
+
+$fontsize-sm: 0.875rem;
+$fontsize-lineheight-sm: 1.125rem;
+
+$fontsize-base: 1rem;
+$fontsize-lineheight-base: 1.5rem;
+
+$fontsize-lg: 1.25rem;
+$fontsize-lineheight-lg: 1.5rem;
+
+$fontsize-lg: 1.5rem;
+$fontsize-lineheight-lg: 2.25rem;
+/** end Font sizing **/
+
+/** colors **/
+$color-brand: #005b9c;
+$color-brand-100: #ccdeeb;
+$color-brand-200: #99bdd7;
+$color-brand-300: #669dc4;
+$color-brand-400: #337cb0;
+$color-brand-500: #005b9c;
+$color-brand-600: #00497d;
+$color-brand-700: #00375e;
+$color-brand-800: #00243e;
+$color-brand-900: #00121f;
+
+$color-presets: (
+  'brands': 'brand',
+  'primaries': 'primary',
+  'secondaries': 'secondary',
+  'uis': 'ui',
+  'decoratives': 'decorative',
+  'tints': 'tint',
+  'lights': 'light',
+  'interactives': 'interactive',
+  'alertinfos': 'alertinfo',
+  'alertsuccesses': 'alertsuccess',
+  'alertcritical': 'alertcritical',
+);
+
+$color-brands: (
+  'default': $color-brand,
+  '100': $color-brand-100,
+  '200': $color-brand-200,
+  '300': $color-brand-300,
+  '400': $color-brand-400,
+  '500': $color-brand-500,
+  '600': $color-brand-600,
+  '700': $color-brand-700,
+  '800': $color-brand-800,
+  '900': $color-brand-900,
+);
+
+$color-primary: #373737;
+$color-primary-100: #d7d7d7;
+$color-primary-200: #afafaf;
+$color-primary-300: #878787;
+$color-primary-400: #5f5f5f;
+$color-primary-500: #373737;
+$color-primary-600: #2c2c2c;
+$color-primary-700: #212121;
+$color-primary-800: #161616;
+$color-primary-900: #0b0b0b;
+
+$color-primaries: (
+  'default': $color-primary,
+  '100': $color-primary-100,
+  '200': $color-primary-200,
+  '300': $color-primary-300,
+  '400': $color-primary-400,
+  '500': $color-primary-500,
+  '600': $color-primary-600,
+  '700': $color-primary-700,
+  '800': $color-primary-800,
+  '900': $color-primary-900,
+);
+
+$color-secondary: #5e6f77;
+$color-secondary-100: #dfe2e4;
+$color-secondary-200: #bfc5c9;
+$color-secondary-300: #9ea9ad;
+$color-secondary-400: #7e8c92;
+$color-secondary-500: #5e6f77;
+$color-secondary-600: #4b595f;
+$color-secondary-700: #38437f;
+$color-secondary-800: #262c30;
+$color-secondary-900: #131618;
+
+$color-secondaries: (
+  'default': $color-secondary,
+  '100': $color-secondary-100,
+  '200': $color-secondary-200,
+  '300': $color-secondary-300,
+  '400': $color-secondary-400,
+  '500': $color-secondary-500,
+  '600': $color-secondary-600,
+  '700': $color-secondary-700,
+  '800': $color-secondary-800,
+  '900': $color-secondary-900,
+);
+
+$color-ui: #8d8d8d;
+$color-ui-100: #e8e8e8;
+$color-ui-200: #d1d1d1;
+$color-ui-300: #bbbbbb;
+$color-ui-400: #a4a4a4;
+$color-ui-500: #8d8d8d;
+$color-ui-600: #717171;
+$color-ui-700: #555555;
+$color-ui-800: #383838;
+$color-ui-900: #1c1c1c;
+
+$color-uis: (
+  'default': $color-ui,
+  '100': $color-ui-100,
+  '200': $color-ui-200,
+  '300': $color-ui-300,
+  '400': $color-ui-400,
+  '500': $color-ui-500,
+  '600': $color-ui-600,
+  '700': $color-ui-700,
+  '800': $color-ui-800,
+  '900': $color-ui-900,
+);
+
+$color-decorative: #dde3e6;
+$color-decorative-100: #f8f9fa;
+$color-decorative-200: #f1f4f5;
+$color-decorative-300: #ebeef0;
+$color-decorative-400: #e4e9eb;
+$color-decorative-500: #dde3e6;
+$color-decorative-600: #b1b6b8;
+$color-decorative-700: #85888a;
+$color-decorative-800: #585b5c;
+$color-decorative-900: #2c2d2e;
+
+$color-decoratives: (
+  'default': $color-decorative,
+  '100': $color-decorative-100,
+  '200': $color-decorative-200,
+  '300': $color-decorative-300,
+  '400': $color-decorative-400,
+  '500': $color-decorative-500,
+  '600': $color-decorative-600,
+  '700': $color-decorative-700,
+  '800': $color-decorative-800,
+  '900': $color-decorative-900,
+);
+
+$color-tint: #f3f4f5;
+$color-tint-100: #fdfdfd;
+$color-tint-200: #fafbfb;
+$color-tint-300: #f8f8f9;
+$color-tint-400: #f3f6f7;
+$color-tint-500: #f3f4f5;
+$color-tint-600: #c2c3c4;
+$color-tint-700: #929293;
+$color-tint-800: #616262;
+$color-tint-900: #313131;
+
+$color-tints: (
+  'default': $color-tint,
+  '100': $color-tint-100,
+  '200': $color-tint-200,
+  '300': $color-tint-300,
+  '400': $color-tint-400,
+  '500': $color-tint-500,
+  '600': $color-tint-600,
+  '700': $color-tint-700,
+  '800': $color-tint-800,
+  '900': $color-tint-900,
+);
+
+$color-light: #ffffff;
+$color-light-100: #ffffff;
+$color-light-200: #ffffff;
+$color-light-300: #ffffff;
+$color-light-400: #ffffff;
+$color-light-500: #ffffff;
+$color-light-600: #cccccc;
+$color-light-700: #999999;
+$color-light-800: #666666;
+$color-light-900: #333333;
+
+$color-lights: (
+  'default': $color-light,
+  '100': $color-light-100,
+  '200': $color-light-200,
+  '300': $color-light-300,
+  '400': $color-light-400,
+  '500': $color-light-500,
+  '600': $color-light-600,
+  '700': $color-light-700,
+  '800': $color-light-800,
+  '900': $color-light-900,
+);
+
+$color-interactive: #005b9c;
+$color-interactive-100: #ccdeeb;
+$color-interactive-200: #99bdd7;
+$color-interactive-300: #669dc4;
+$color-interactive-400: #337cb0;
+$color-interactive-500: #005b9c;
+$color-interactive-600: #00497d;
+$color-interactive-700: #00375e;
+$color-interactive-800: #00243e;
+$color-interactive-900: #00121f;
+
+$color-interactives: (
+  'default': $color-interactive,
+  '100': $color-interactive-100,
+  '200': $color-interactive-200,
+  '300': $color-interactive-300,
+  '400': $color-interactive-400,
+  '500': $color-interactive-500,
+  '600': $color-interactive-600,
+  '700': $color-interactive-700,
+  '800': $color-interactive-800,
+  '900': $color-interactive-900,
+);
+
+$color-alertinfo: #005b9c;
+$color-alertinfo-100: #ccdeeb;
+$color-alertinfo-200: #99bdd7;
+$color-alertinfo-300: #669dc4;
+$color-alertinfo-400: #337cb0;
+$color-alertinfo-500: #005b9c;
+$color-alertinfo-600: #00497d;
+$color-alertinfo-700: #00375e;
+$color-alertinfo-800: #00243e;
+$color-alertinfo-900: #00121f;
+
+$color-alertinfos: (
+  'default': $color-alertinfo,
+  '100': $color-alertinfo-100,
+  '200': $color-alertinfo-200,
+  '300': $color-alertinfo-300,
+  '400': $color-alertinfo-400,
+  '500': $color-alertinfo-500,
+  '600': $color-alertinfo-600,
+  '700': $color-alertinfo-700,
+  '800': $color-alertinfo-800,
+  '900': $color-alertinfo-900,
+);
+
+$color-alertsuccess: #318500;
+$color-alertsuccess-100: #accd99;
+$color-alertsuccess-200: #83b767;
+$color-alertsuccess-300: #83b666;
+$color-alertsuccess-400: #5b9d33;
+$color-alertsuccess-500: #318500;
+$color-alertsuccess-600: #276a00;
+$color-alertsuccess-700: #1d5000;
+$color-alertsuccess-800: #143500;
+$color-alertsuccess-900: #0a1b00;
+
+$color-alertsuccesses: (
+  'default': $color-alertsuccess,
+  '100': $color-alertsuccess-100,
+  '200': $color-alertsuccess-200,
+  '300': $color-alertsuccess-300,
+  '400': $color-alertsuccess-400,
+  '500': $color-alertsuccess-500,
+  '600': $color-alertsuccess-600,
+  '700': $color-alertsuccess-700,
+  '800': $color-alertsuccess-800,
+  '900': $color-alertsuccess-900,
+);
+
+$color-alertcritical: #cb1829;
+$color-alertcritical-100: #f5d1d4;
+$color-alertcritical-200: #eaa3a9;
+$color-alertcritical-300: #e0747f;
+$color-alertcritical-400: #d54654;
+$color-alertcritical-500: #cb1829;
+$color-alertcritical-600: #a21321;
+$color-alertcritical-700: #7a0e19;
+$color-alertcritical-800: #510a10;
+$color-alertcritical-900: #290508;
+
+$color-alertcriticals: (
+  'default': $color-alertcritical,
+  '100': $color-alertcritical-100,
+  '200': $color-alertcritical-200,
+  '300': $color-alertcritical-300,
+  '400': $color-alertcritical-400,
+  '500': $color-alertcritical-500,
+  '600': $color-alertcritical-600,
+  '700': $color-alertcritical-700,
+  '800': $color-alertcritical-800,
+  '900': $color-alertcritical-900,
+);
+
+$colorset: (
+  'brand': $color-brands,
+  'primary': $color-primaries,
+  'secondary': $color-secondaries,
+  'ui': $color-uis,
+  'decorative': $color-decoratives,
+  'tints': $color-tints,
+  'light': $color-lights,
+  'interactive': $color-interactives,
+  'alertinto': $color-alertinfos,
+  'alertsuccess': $color-alertsuccesses,
+  'alertcritical': $color-alertcriticals,
+);
+/** end colors **/

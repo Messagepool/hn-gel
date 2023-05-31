@@ -1,0 +1,36 @@
+@use './../mixins' as mixins;
+
+.form-select {
+  @apply block border text-primary placeholder-secondary focus:shadow-xl;
+  // TODO: Padding and spacing should be configurable from core
+  padding: var(--form-input-regular-padding);
+  min-width: var(--form-input-regular-min-width);
+
+  &:disabled {
+    @apply border-decorative;
+  }
+
+  &:checked {
+    @apply border-alertinteractive;
+  }
+
+  &:focus {
+    @apply border-alertinteractive shadow-2xl;
+  }
+
+  &:invalid {
+    @apply border-alertcritical text-alertcritical;
+  }
+
+  & > option.disabled {
+    @apply text-decorative
+  }
+}
+
+.form-select--small {
+  @extend .form-select;
+  padding: var(--form-input-small-padding);
+  height: var(--form-input-small-height);
+}
+
+
