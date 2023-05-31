@@ -1,6 +1,7 @@
 {
-  "name": "hn-gel-system",
+  "name": "@hn-gel-system/monorepo",
   "version": "1.0.0",
+  "main": "dist/hn-styles.css",
   "scripts": {
     "build": "webpack --config=./.config/webpack/webpack.config.prod.js",
     "build:watch": "webpack --watch --config=./.config/webpack/webpack.config.dev.js",
@@ -26,5 +27,8 @@
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
     "webpack-merge": "^5.8.0"
-  }
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
 }
