@@ -2,32 +2,56 @@ const glob = require('glob');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const HnAssetExtractorPlugin = require('./plugins/hn-asset-extractor.plugin');
 
 const rootDir = path.dirname(path.dirname(__dirname));
-const configDir = path.join(rootDir, '.config');
-const nodeDir = path.join(rootDir, 'node_modules');
-const srcDir = path.join(rootDir, 'src');
+const packagesDir = path.join(rootDir, 'packages');
+const tailwindcssDir = path.join(packagesDir, 'tailwindcss');
+const bootstrapDir = path.join(packagesDir, 'bootstrap');
+const commonDir = path.join(packagesDir, 'common');
 
-const stylesDir = path.join(srcDir, 'tailwind');
-const scriptDir = path.join(srcDir, 'tailwind');
+const configDir = path.join(rootDir, '.config');
 const distDir = path.join(rootDir, 'dist');
-const commonDir = path.join(srcDir, `common`);
+
+const packageReference = {
+  'hn-tailwind': 'tailwindcss',
+  'hn-bootstrap': 'bootstrap'
+};
 
 module.exports = {
+  target: 'node',
   entry: {
-    'hn-scripts': [
-      path.join(scriptDir, 'js/main.js'),
-      path.join(stylesDir, 'scss/main.scss'),
-    ],
+    'hn-tailwind': {
+      import: [
+        path.join(tailwindcssDir, 'src/js/main.js'),
+        path.join(tailwindcssDir, 'src/scss/main.scss')
+      ],
+      filename: '../packages/tailwindcss/dist/hn-tailwind.js'
+    },
+    'hn-bootstrap': {
+      import: [
+        path.join(bootstrapDir, 'src/js/main.js'),
+        path.join(bootstrapDir, 'src/scss/main.scss')
+      ],
+      filename: '../packages/bootstrap/dist/hn-bootstrap.js'
+    }
   },
   output: {
-    filename: '[name].js',
     path: path.resolve(distDir),
     clean: true,
+    globalObject: 'this',
+    library: {
+      name: 'hn-gel-system',
+      type: 'umd',
+    },
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'hn-styles.css',
+      filename: (pathData) => {
+        const { runtime } = pathData.chunk;
+        const package = packageReference[runtime];
+        return `../packages/${package}/dist/[name].css`
+      }
     }),
     new CopyPlugin({
       patterns: [
@@ -43,6 +67,12 @@ module.exports = {
         },
       ],
     }),
+    new HnAssetExtractorPlugin({
+      paths: [
+        '../packages/tailwindcss/dist/',
+        '../packages/bootstrap/dist/'
+      ]
+    })
   ],
   module: {
     rules: [
@@ -61,7 +91,11 @@ module.exports = {
           },
           'sass-loader',
         ],
-      },
+      }
     ],
   },
+  resolve: {
+    extensions: ['.js', '.scss'],
+    alias: {}
+  }
 };
