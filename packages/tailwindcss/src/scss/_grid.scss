@@ -1,0 +1,8 @@
+.hn-grid {
+  @apply grid xs:grid-cols-4 sm:grid-cols-6 md:grid-cols-12 grid-cols-12;
+  @apply xs:gap-4 md:gap-6 gap-6;
+
+  & > .hn-col {
+    @apply col-auto xs:m-1 sm:m-1.5 md:m-1.5 m-2;
+  }
+}
