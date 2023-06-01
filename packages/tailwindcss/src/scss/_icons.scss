@@ -1,0 +1,67 @@
+@import 'material-icons/iconfont/material-icons.css';
+@import 'material-icons/iconfont/variables';
+@import 'material-icons/iconfont/mixins';
+
+$icon-mapping : (
+  'account' : 'person_outlined',
+  'add': 'add',
+  'alert': 'error_outlined',
+  'breadcrumb': 'keyboard_arrow_right',
+  'call': 'call',
+  'cart': 'shopping_cart',
+  'check': 'check',
+  'checkbox': 'check_box_outline_blank',
+  'checked': 'check_box',
+  'collapse': 'keyboard_arrow_up',
+  'credit_card': 'credit_card',
+  'deliver': 'delivery_dining',
+  'dropdown': 'arrow_drop_down',
+  'edit': 'edit',
+  'expand': 'keyboard_arrow_down',
+  'gift_card': 'card_giftcard',
+  'grid': 'grid_view',
+  'home': 'home',
+  'like': 'favorite_border',
+  'liked': 'favorite',
+  'list': 'format_list_bulleted',
+  'map': 'map',
+  'radio': 'radio_button_unchecked',
+  'radio_select': 'radio_button_checked',
+  'search': 'search',
+  'secure': 'lock',
+  'signup': 'mail',
+  'spinner': '',
+  'star': 'star_border',
+  'star_half': 'star_half',
+  'track': 'my_location'
+);
+
+.hn-icon {
+  @include material-icons-font-class('Material Icons');
+  &:before {
+    @apply inline-block w-4;
+  }
+}
+
+@each $name, $icon in $icon-mapping {
+  .hn-icon-#{$name} {
+    @extend .hn-icon;
+    // @include material-icons-font-class('Material Icons');
+    // @apply text-primary ;
+
+    &:before {
+      content: "#{$icon}";
+      // @apply inline-block w-4;
+    }
+  }
+}
+
+// .hn-icon-account {
+//   @include material-icons-font-class('Material Icons');
+//   @apply text-primary ;
+
+//   &:before {
+//     content: "person_outlined";
+//     @apply inline-block w-4;
+//   }
+// }
