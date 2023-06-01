@@ -46,22 +46,9 @@ $icon-mapping : (
 @each $name, $icon in $icon-mapping {
   .hn-icon-#{$name} {
     @extend .hn-icon;
-    // @include material-icons-font-class('Material Icons');
-    // @apply text-primary ;
 
     &:before {
       content: "#{$icon}";
-      // @apply inline-block w-4;
     }
   }
 }
-
-// .hn-icon-account {
-//   @include material-icons-font-class('Material Icons');
-//   @apply text-primary ;
-
-//   &:before {
-//     content: "person_outlined";
-//     @apply inline-block w-4;
-//   }
-// }
