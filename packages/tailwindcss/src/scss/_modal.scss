@@ -1,0 +1,32 @@
+hn-modal {
+  @apply flex items-center w-full h-full fixed top-0 bg-opacity-20;
+  // Need to use rgb format to utilize bg-opacity
+  background-color: rgb(55,55,55, var(--tw-bg-opacity));
+
+  & > .modal-container {
+    @apply relative bg-light z-20 opacity-100;
+    @apply h-auto mx-auto my-[24px] rounded-[4px] shadow-2xl border border-ui;
+    @apply xs:h-full xs:w-full;
+  }
+
+  & > .modal-container .modal-header {
+    @apply xs:p-[16px] px-[24px] py-[16px] border-b-2 border-ui bg-transparent;
+  }
+
+  & > .modal-container .modal-header h2 {
+    @apply mb-0 mt-0 flex flex-grow items-center;
+  }
+
+  & > .modal-container .modal-header [aria-label="Close"] {
+    @apply w-[44px] h-[44px] absolute xs:right-[2px] xs:top-[12px];
+  }
+
+  & > .modal-container .modal-content {
+    @apply px-[24px] pt-[24px] pb-[32px] overflow-y-auto relative h-full min-w-[560px] min-h-[240px];
+    @apply xs:max-h-[80%]
+  }
+
+  & > .modal-container .modal-footer {
+    @apply px-[24px] py-[16px] text-right border-t border-decorative;
+  }
+}

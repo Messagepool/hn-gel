@@ -1,16 +1,20 @@
 class HnModal extends HTMLElement {
   constructor(){
     super();
+    const triggerElement = document.querySelector(`[data-modal="#${this.id}"`);
     this.classList.add('hidden');
 
-    this.querySelector('[aria-label="Close"]')
-      .addEventListener('click', () => this.close());
+    this.querySelectorAll('[aria-label="Close"]').forEach( (closeButton) => {
+      closeButton.addEventListener('click', () => this.close() );
+    });
 
     this.addEventListener('click', event => {
       if(event.target.tagName === 'HN-MODAL'){
         this.close();
       }
     });
+
+    triggerElement?.addEventListener('click', () => this.open() )
   }
 
   open(){
