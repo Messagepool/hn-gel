@@ -1,3 +1,29 @@
 .btn {
-  @apply justify-center bg-brand text-light;
+  @apply xs:w-full md:w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light;
+
+  &.btn-primary {
+    @apply bg-brand border-brand;
+  }
+
+  &.btn-secondary {
+    @apply bg-tint border border-ui text-primary;
+  }
+
+  &.btn-link {
+    @apply bg-transparent border-none text-brand;
+  }
+
+  &:disabled,
+  &.btn-disabled {
+    & > .spinner {
+      @apply xs:h-8 h-6 animate-spin;
+    }
+    @apply cursor-not-allowed bg-decorative;
+  }
+}
+
+// TODO: Should i removed this as well?
+.btn--small {
+  @extend .btn;
+  @apply py-1 px-2
 }
