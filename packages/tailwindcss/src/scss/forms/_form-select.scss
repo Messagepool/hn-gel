@@ -2,20 +2,23 @@
 
 .form-select {
   @apply block border text-primary placeholder-secondary focus:shadow-xl;
-  // TODO: Padding and spacing should be configurable from core
-  padding: var(--form-input-regular-padding);
-  min-width: var(--form-input-regular-min-width);
+  @apply w-[var(--form-input-regular-min-width)];
+  @apply p-[var(--form-input-small-padding)];
+  @apply h-[var(--form-input-small-height)];
+
+  @apply xs:p-[var(--form-input-regular-padding)];
+  @apply xs:h-[var(--form-input-regular-height)] xs:w-full;
 
   &:disabled {
     @apply border-decorative;
   }
 
   &:checked {
-    @apply border-alertinteractive;
+    @apply border-interactive;
   }
 
   &:focus {
-    @apply border-alertinteractive shadow-2xl;
+    @apply border-interactive shadow-2xl;
   }
 
   &:invalid {
@@ -26,11 +29,4 @@
     @apply text-decorative
   }
 }
-
-.form-select--small {
-  @extend .form-select;
-  padding: var(--form-input-small-padding);
-  height: var(--form-input-small-height);
-}
-
 
