@@ -34,13 +34,8 @@
     </div>
     <div class="form-group">
       <input type="checkbox" id="checkbox-active" checked class="form-checkbox"/>
-      <label class="form-label" for="checkbox-active">Active</label>
+      <label class="form-label" for="checkbox-active">Default</label>
     </div>
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-focus" focused class="form-checkbox"/>
-      <label class="form-label" for="checkbox-focus">Focus</label>
-    </div>
-
     <div class="form-group">
       <input type="checkbox" id="checkbox-default" disabled class="form-checkbox"/>
       <label class="form-label" for="checkbox-default">Disabled</label>
@@ -49,33 +44,6 @@
     <div class="form-group">
       <input type="checkbox" id="checkbox-error" required class="form-checkbox peer"/>
       <label class="form-label" for="checkbox-error">Error</label>
-      <p class="peer-invalid:visible form-error">
-        <span class="material-icons">error_outline</span>
-        This is an error message
-      </p>
-    </div>
-
-    <h3 class="text-xl">Small</h3>
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-default-sm" class="form-checkbox--small"/>
-      <label class="form-label" for="checkbox-default-sm">Default</label>
-    </div>
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-active-sm" checked class="form-checkbox--small"/>
-      <label class="form-label" for="checkbox-active-sm">Active</label>
-    </div>
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-focus-sm" focused class="form-checkbox--small"/>
-      <label class="form-label" for="checkbox-focus-sm">Focus</label>
-    </div>
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-disabled-sm" disabled class="form-checkbox--small"/>
-      <label class="form-label" for="checkbox-disabled-sm">Disabled</label>
-    </div>
-
-    <div class="form-group">
-      <input type="checkbox" id="checkbox-error-sm" required class="form-checkbox--small peer"/>
-      <label class="form-label" for="checkbox-error-sm">Error</label>
       <p class="peer-invalid:visible form-error">
         <span class="material-icons">error_outline</span>
         This is an error message
@@ -92,13 +60,8 @@
     </div>
 
     <div class="form-group">
-      <input type="radio" id="radio-active" checked class="form-radio" />
+      <input type="radio" id="radio-active" class="form-radio" checked/>
       <label class="form-label" for="radio-active">Active</label>
-    </div>
-
-    <div class="form-group">
-      <input type="radio" id="radio-focus" class="form-radio" />
-      <label class="form-label" for="radio-focus">Focus</label>
     </div>
 
     <div class="form-group">
@@ -116,42 +79,13 @@
     </div>
     
 
-    
-    <h3 class="text-xl">Small</h3>
-    <div class="form-group">
-      <input type="radio" id="radio-default-sm" class="form-radio--small" />
-      <label class="form-label" for="radio-default-sm">Default</label>
-    </div>
-
-    <div class="form-group">
-      <input type="radio" id="radio-active-sm" checked class="form-radio--small" />
-      <label class="form-label" for="radio-active-sm">Active</label>
-    </div>
-
-    <div class="form-group">
-      <input type="radio" id="radio-focus-sm" class="form-radio--small" />
-      <label class="form-label" for="radio-focus-sm">Focus</label>
-    </div>
-
-    <div class="form-group">
-      <input type="radio" id="radio-disabled-sm" disabled class="form-radio--small" />
-      <label class="form-label" for="radio-disabled-sm">Disabled</label>
-    </div>
-
-    <div class="form-group">
-      <input type="radio" id="radio-error-sm" class="form-radio--small peer" name="radio-error" value="" required/>
-      <label class="form-label" for="radio-error-sm">Error</label>
-      <p class="peer-invalid:visible form-error">
-        <span class="material-icons">error_outline</span>
-        This is an error message
-      </p>
-    </div>
-
     <hr>
 
     <!-- Form Elements : Input -->
     <h2 class="text-lg">Input</h2>
-    <h3 class="text-xl">Smart Labels</h3>
+
+    <!-- Let's hide this for now -->
+    <!-- <h3 class="text-xl">Smart Labels</h3>
     <div class="form-group">
       <label class="form-label" for="text-smart-default">Form Label</label>
       <input type="text" id="text-smart-default" placeholder="Placeholder" class="form-input--smart"/>
@@ -183,25 +117,12 @@
         <span class="material-icons">error_outline</span>
         This is an error message
       </p>
-    </div>
+    </div> -->
 
-    <h3 class="text-xl">Regular</h3>
+    
     <div class="form-group">
       <label class="form-label" for="text-default">Form Label</label>
       <input type="text" id="text-default" placeholder="Placeholder" class="form-input"/>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="text-active">Form Label</label>
-      <input type="text" id="text-active" value="Text typed by user" class="form-input"/>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="text-focus">Form Label</label>
-      <input type="text" id="text-focus" focused placeholder="Placeholder" class="form-input"/>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="text-active">Form Label</label>
-      <input type="text" id="text-active" focused placeholder="Placeholder" class="form-input"/>
     </div>
 
     <div class="form-group">
@@ -218,80 +139,26 @@
       </p>
     </div>
 
-    <h4>Small</h4>
-    <div class="form-group">
-      <label class="form-label" for="text-default">Form Label</label>
-      <input type="text" id="text-default" placeholder="Placeholder" class="form-input--small"/>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="text-active">Form Label</label>
-      <input type="text" id="text-active" value="Text typed by user" class="form-input--small"/>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="text-focus">Form Label</label>
-      <input type="text" id="text-focus" focused placeholder="Placeholder" class="form-input--small"/>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="text-active">Form Label</label>
-      <input type="text" id="text-active" focused placeholder="Placeholder" class="form-input--small"/>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="text-default">Form Label</label>
-      <input type="text" id="text-default" disabled placeholder="Placeholder" class="form-input--small"/>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="text-error">Form Label</label>
-      <input type="text" id="text-error" required placeholder="Placeholder" class="form-input--small peer"/>
-      <p class="peer-invalid:visible form-error">
-        <span class="material-icons">error_outline</span>
-        This is an error message
-      </p>
-    </div>
-
     <hr>
 
     <!-- Form elements: Dropdown -->
     <h2 class="text-lg">Dropdown</h2>
-    <h3 class="text-xl">Regular</h3>
     <div class="form-group">
-      <label class="form-label" for="dropdown-default">Form Label</label>
+      <label class="form-label" for="dropdown-default">Default</label>
       <select id="dropdown-default" aria-placeholder="Select Option" class="form-select">
         <option value="" default>Select Option</option>
       </select>
     </div>
+
     <div class="form-group">
-      <label class="form-label" for="dropdown-active">Form Label</label>
-      <select class="form-select">
-        <option value="" disabled>Select Option</option>
-        <option selected>Choose Selection</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="dropdown-focus">Form Label</label>
-      <select class="form-select">
+      <label class="form-label" for="dropdown-disabled">Disabled</label>
+      <select id="dropdown-disabled" class="form-select" disabled>
         <option value="" disabled selected>Select Option</option>
       </select>
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="dropdown-active">Form Label</label>
-      <select class="form-select">
-        <option value="" disabled selected>Select Option</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="dropdown-default">Form Label</label>
-      <select class="form-select">
-        <option value="" disabled selected>Select Option</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="dropdown-error">Form Label</label>
+      <label class="form-label" for="dropdown-error">With Error Message</label>
       <select id="dropdown-error" class="form-select peer" required>
         <option value="" disabled selected>Select Option</option>
       </select>
@@ -301,53 +168,6 @@
       </p>
     </div>
     <hr>
-
-    <h3 class="text-xl">Small</h3>
-    <div class="form-group">
-      <label class="form-label" for="dropdown-default">Form Label</label>
-      <select id="dropdown-default" aria-placeholder="Select Option" class="form-select--small">
-        <option value="" default>Select Option</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="dropdown-active">Form Label</label>
-      <select class="form-select--small">
-        <option value="" disabled>Select Option</option>
-        <option selected>Choose Selection</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="form-label" for="dropdown-focus">Form Label</label>
-      <select class="form-select--small">
-        <option value="" disabled selected>Select Option</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="dropdown-active">Form Label</label>
-      <select class="form-select--small">
-        <option value="" disabled selected>Select Option</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="dropdown-default">Form Label</label>
-      <select class="form-select--small">
-        <option value="" disabled selected>Select Option</option>
-      </select>
-    </div>
-
-    <div class="form-group">
-      <label class="form-label" for="dropdown-error">Form Label</label>
-      <select id="dropdown-error" class="form-select--small peer" required>
-        <option value="" disabled selected>Select Option</option>
-      </select>
-      <p class="peer-invalid:visible form-error">
-        <span class="material-icons">error_outline</span>
-        This is an error message
-      </p>
-    </div>
-
     <hr>
     <h2 class="text-lg">Grid</h2>
     <h3 class="text-xl"></h3>
@@ -365,6 +185,18 @@
       <div class="hn-col text-light bg-brand py-4">10</div>
       <div class="hn-col text-light bg-brand py-4">11</div>
       <div class="hn-col text-light bg-brand py-4">12</div>
+      <div class="hn-col text-light bg-brand py-4">13</div>
+      <div class="hn-col text-light bg-brand py-4">14</div>
+      <div class="hn-col text-light bg-brand py-4">15</div>
+      <div class="hn-col text-light bg-brand py-4">16</div>
+      <div class="hn-col text-light bg-brand py-4">17</div>
+      <div class="hn-col text-light bg-brand py-4">18</div>
+      <div class="hn-col text-light bg-brand py-4">19</div>
+      <div class="hn-col text-light bg-brand py-4">20</div>
+      <div class="hn-col text-light bg-brand py-4">21</div>
+      <div class="hn-col text-light bg-brand py-4">22</div>
+      <div class="hn-col text-light bg-brand py-4">23</div>
+      <div class="hn-col text-light bg-brand py-4">24</div>
     </div>
 
     <hr>
@@ -448,16 +280,16 @@
     <p class="text-light-800">text-light-800</p>
     <p class="text-light-900">text-light-900</p>
 
-    <p class="text-alertinteractive">text-alertinteractive</p>
-    <p class="text-alertinteractive-100">text-alertinteractive-100</p>
-    <p class="text-alertinteractive-200">text-alertinteractive-200</p>
-    <p class="text-alertinteractive-300">text-alertinteractive-300</p>
-    <p class="text-alertinteractive-400">text-alertinteractive-400</p>
-    <p class="text-alertinteractive-500">text-alertinteractive-500</p>
-    <p class="text-alertinteractive-600">text-alertinteractive-600</p>
-    <p class="text-alertinteractive-700">text-alertinteractive-700</p>
-    <p class="text-alertinteractive-800">text-alertinteractive-800</p>
-    <p class="text-alertinteractive-900">text-alertinteractive-900</p>
+    <p class="text-interactive">text-interactive</p>
+    <p class="text-interactive-100">text-interactive-100</p>
+    <p class="text-interactive-200">text-interactive-200</p>
+    <p class="text-interactive-300">text-interactive-300</p>
+    <p class="text-interactive-400">text-interactive-400</p>
+    <p class="text-interactive-500">text-interactive-500</p>
+    <p class="text-interactive-600">text-interactive-600</p>
+    <p class="text-interactive-700">text-interactive-700</p>
+    <p class="text-interactive-800">text-interactive-800</p>
+    <p class="text-interactive-900">text-interactive-900</p>
 
     <p class="text-alertinfo">text-alertinfo</p>
     <p class="text-alertinfo-100">text-alertinfo-100</p>
@@ -571,16 +403,16 @@
     <div class="bg-light-800">bg-light-800</div>
     <div class="bg-light-900">bg-light-900</div>
 
-    <div class="bg-alertinteractive">bg-alertinteractive</div>
-    <div class="bg-alertinteractive-100">bg-alertinteractive-100</div>
-    <div class="bg-alertinteractive-200">bg-alertinteractive-200</div>
-    <div class="bg-alertinteractive-300">bg-alertinteractive-300</div>
-    <div class="bg-alertinteractive-400">bg-alertinteractive-400</div>
-    <div class="bg-alertinteractive-500">bg-alertinteractive-500</div>
-    <div class="bg-alertinteractive-600">bg-alertinteractive-600</div>
-    <div class="bg-alertinteractive-700">bg-alertinteractive-700</div>
-    <div class="bg-alertinteractive-800">bg-alertinteractive-800</div>
-    <div class="bg-alertinteractive-900">bg-alertinteractive-900</div>
+    <div class="bg-interactive">bg-interactive</div>
+    <div class="bg-interactive-100">bg-interactive-100</div>
+    <div class="bg-interactive-200">bg-interactive-200</div>
+    <div class="bg-interactive-300">bg-interactive-300</div>
+    <div class="bg-interactive-400">bg-interactive-400</div>
+    <div class="bg-interactive-500">bg-interactive-500</div>
+    <div class="bg-interactive-600">bg-interactive-600</div>
+    <div class="bg-interactive-700">bg-interactive-700</div>
+    <div class="bg-interactive-800">bg-interactive-800</div>
+    <div class="bg-interactive-900">bg-interactive-900</div>
 
     <div class="bg-alertinfo">bg-alertinfo</div>
     <div class="bg-alertinfo-100">bg-alertinfo-100</div>
@@ -618,43 +450,113 @@
     <hr>
 
     <h3 class="text-lg">Icons</h3>
+    <p>MD</p>
+    <span class="hn-icons icon-account"></span>
+    <span class="hn-icons icon-add"></span>
+    <span class="hn-icons icon-alert"></span>
+    <span class="hn-icons icon-breadcrumb"></span>
+    <span class="hn-icons icon-call"></span>
+    <span class="hn-icons icon-cart"></span>
+    <span class="hn-icons icon-check"></span>
+    <span class="hn-icons icon-checkbox"></span>
+    <span class="hn-icons icon-checked"></span>
+    <span class="hn-icons icon-collapse"></span>
+    <span class="hn-icons icon-credit_card"></span>
+    <span class="hn-icons icon-deliver"></span>
+    <span class="hn-icons icon-dropdown"></span>
+    <span class="hn-icons icon-edit"></span>
+    <span class="hn-icons icon-expand"></span>
+    <span class="hn-icons icon-gift_card"></span>
+    <span class="hn-icons icon-grid"></span>
+    <span class="hn-icons icon-home"></span>
+    <span class="hn-icons icon-like"></span>
+    <span class="hn-icons icon-liked"></span>
+    <span class="hn-icons icon-list"></span>
+    <span class="hn-icons icon-map"></span>
+    <span class="hn-icons icon-radio"></span>
+    <span class="hn-icons icon-radio_select"></span>
+    <span class="hn-icons icon-search"></span>
+    <span class="hn-icons icon-secure"></span>
+    <span class="hn-icons icon-signup"></span>
+    <span class="hn-icons icon-spinner"></span>
+    <span class="hn-icons icon-star"></span>
+    <span class="hn-icons icon-star_half"></span>
+    <span class="hn-icons icon-track"></span>
 
-    <p>Account</p>
-    <span class="hn-icon-account" />
-    <span class="hn-icon-add" />
-    <span class="hn-icon-alert" />
-    <span class="hn-icon-breadcrumb" />
-    <span class="hn-icon-call" />
-    <span class="hn-icon-cart" />
-    <span class="hn-icon-check" />
-    <span class="hn-icon-checkbox" />
-    <span class="hn-icon-checked" />
-    <span class="hn-icon-collapse" />
-    <span class="hn-icon-credit_card" />
-    <span class="hn-icon-deliver" />
-    <span class="hn-icon-dropdown" />
-    <span class="hn-icon-edit" />
-    <span class="hn-icon-expand" />
-    <span class="hn-icon-gift_card" />
-    <span class="hn-icon-grid" />
-    <span class="hn-icon-home" />
-    <span class="hn-icon-like" />
-    <span class="hn-icon-liked" />
-    <span class="hn-icon-list" />
-    <span class="hn-icon-map" />
-    <span class="hn-icon-radio" />
-    <span class="hn-icon-radio_select" />
-    <span class="hn-icon-search" />
-    <span class="hn-icon-secure" />
-    <span class="hn-icon-signup" />
-    <span class="hn-icon-spinner" />
-    <span class="hn-icon-star" />
-    <span class="hn-icon-star_half" />
-    <span class="hn-icon-track" />
 
+    <hr />
+    <h2 class="text-lg">Buttons</h2>
+    <h3 class="text-xl">Regular Buttons</h3>
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-link">Links(anchor)</button>
+    <button class="btn" disabled>Disabled</button>
+    
+    
+    
+    <h3 class="text-xl">Small Buttons</h3>
+    <button class="btn--small btn-primary">Primary Button</button>
+    <button class="btn--small btn-secondary">Secondary</button>
+    <button class="btn--small btn-link">Links(anchor)</button>
+    <button class="btn--small" disabled>Disabled</button>
+
+    <h3 class="text-xl">Button Iconography</h3>
+    <button class="btn btn-primary">
+      <span class="hn-icons icon-cart"></span>
+    </button>
+
+    <button class="btn btn-primary">
+      <span class="hn-icons icon-secure"></span>
+      Secure Checkout
+    </button>
+
+    <button class="btn btn-secondary">
+      Close
+      <span class="hn-icons icon-close"></span>
+    </button>
+
+    <button class="btn btn-link">
+      <span class="hn-icons icon-remove"></span>
+      Remove
+    </button>
+
+    <button class="btn btn-link">
+      Learn More
+      <span class="hn-icons icon-breadcrumb"></span>
+    </button>
+
+    <hr />
+    <h3 class="text-xl">Button Loader</h3>
+    <button class="btn btn-disabled">
+      <img src="dist/images/spinner-disabled.png" class="spinner"/>
+    </button>
+
+    <hr />
+    <h2 class="text-lg">Modals</h2>
+    <button id="modal-button" data-modal="#sample-modal1" class="btn btn-primary" >Open Modal</button>
+    <hn-modal id="sample-modal" class="hidden">
+      <section class="modal-container">
+        <div class="modal-header">
+          <h2>Modal Header</h2>
+          <a class="close" aria-label="Close">
+            <span class="hn-icons icon-close"></span>
+          </a>
+        </div>
+        <div class="modal-content">
+          Modal Content
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" aria-label="Close">Close</button>
+        </div>
+      </section>
+    </hn-modal>
+
+    <script src="packages/tailwindcss/dist/hn-tailwind.js"></script>
     <script type="text/javascript">
-        // Just to force this element to focus
-        document.querySelector('#checkbox-focus').focus();
+        // document.querySelector('#modal-button')
+        //   .addEventListener('click', () => {
+        //     document.querySelector('#sample-modal').open();
+        //   })
       </script>
   </body>
 </html>
