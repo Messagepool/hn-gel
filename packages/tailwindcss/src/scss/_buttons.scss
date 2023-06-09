@@ -1,5 +1,5 @@
 .btn {
-  @apply xs:w-full md:w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light;
+  @apply xs:w-full md:w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light text-center;
 
   &.btn-primary {
     @apply bg-brand border-brand;
@@ -16,7 +16,7 @@
   &:disabled,
   &.btn-disabled {
     & > .spinner {
-      @apply xs:h-8 h-6 animate-spin;
+      @apply xs:h-8 h-6 animate-spin mx-auto;
     }
     @apply cursor-not-allowed bg-decorative;
   }

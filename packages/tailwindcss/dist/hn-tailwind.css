@@ -890,6 +890,7 @@ select {
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  text-align: center;
   color: #ffffff;
   color: var(--color-light);
 }@media (min-width: 768px) {
@@ -925,6 +926,8 @@ select {
   background-color: #dde3e6;
   background-color: var(--color-decorative);
 }.btn:disabled>.spinner,.btn--small:disabled>.spinner,.btn.btn-disabled>.spinner,.btn-disabled.btn--small>.spinner {
+  margin-left: auto;
+  margin-right: auto;
   height: 1.5rem;
 }@keyframes spin {
 
@@ -1239,7 +1242,7 @@ select {
   width: 1rem;
 }.btn>.hn-icons,.btn--small>.hn-icons {
   vertical-align: middle;
-}.hn-icons.icon-account:before{content:"person_outlined"}.hn-icons.icon-add:before{content:"add"}.hn-icons.icon-alert:before{content:"error_outlined"}.hn-icons.icon-breadcrumb:before{content:"keyboard_arrow_right"}.hn-icons.icon-call:before{content:"call"}.hn-icons.icon-cart:before{content:"shopping_cart"}.hn-icons.icon-check:before{content:"check"}.hn-icons.icon-checkbox:before{content:"check_box_outline_blank"}.hn-icons.icon-checked:before{content:"check_box"}.hn-icons.icon-close:before{content:"close"}.hn-icons.icon-collapse:before{content:"keyboard_arrow_up"}.hn-icons.icon-credit_card:before{content:"credit_card"}.hn-icons.icon-deliver:before{content:"delivery_dining"}.hn-icons.icon-dropdown:before{content:"arrow_drop_down"}.hn-icons.icon-edit:before{content:"edit"}.hn-icons.icon-expand:before{content:"keyboard_arrow_down"}.hn-icons.icon-gift_card:before{content:"card_giftcard"}.hn-icons.icon-grid:before{content:"grid_view"}.hn-icons.icon-home:before{content:"home"}.hn-icons.icon-like:before{content:"favorite_border"}.hn-icons.icon-liked:before{content:"favorite"}.hn-icons.icon-list:before{content:"format_list_bulleted"}.hn-icons.icon-map:before{content:"map"}.hn-icons.icon-remove:before{content:"remove"}.hn-icons.icon-radio:before{content:"radio_button_unchecked"}.hn-icons.icon-radio_select:before{content:"radio_button_checked"}.hn-icons.icon-search:before{content:"search"}.hn-icons.icon-secure:before{content:"lock"}.hn-icons.icon-signup:before{content:"mail"}.hn-icons.icon-spinner:before{content:""}.hn-icons.icon-star:before{content:"star_border"}.hn-icons.icon-star_half:before{content:"star_half"}.hn-icons.icon-track:before{content:"my_location"}hn-modal {
+}.hn-icons.icon-account:before{content:"person_outlined"}.hn-icons.icon-add:before{content:"add"}.hn-icons.icon-alert:before{content:"error_outlined"}.hn-icons.icon-breadcrumb:before{content:"keyboard_arrow_right"}.hn-icons.icon-call:before{content:"call"}.hn-icons.icon-cart:before{content:"shopping_cart"}.hn-icons.icon-check:before{content:"check"}.hn-icons.icon-checkbox:before{content:"check_box_outline_blank"}.hn-icons.icon-checked:before{content:"check_box"}.hn-icons.icon-close:before{content:"close"}.hn-icons.icon-collapse:before{content:"keyboard_arrow_up"}.hn-icons.icon-credit_card:before{content:"credit_card"}.hn-icons.icon-deliver:before{content:"local_shipping"}.hn-icons.icon-dropdown:before{content:"arrow_drop_down"}.hn-icons.icon-edit:before{content:"edit"}.hn-icons.icon-expand:before{content:"keyboard_arrow_down"}.hn-icons.icon-gift_card:before{content:"card_giftcard"}.hn-icons.icon-grid:before{content:"grid_view"}.hn-icons.icon-home:before{content:"home"}.hn-icons.icon-like:before{content:"favorite_border"}.hn-icons.icon-liked:before{content:"favorite"}.hn-icons.icon-list:before{content:"format_list_bulleted"}.hn-icons.icon-map:before{content:"map"}.hn-icons.icon-remove:before{content:"remove"}.hn-icons.icon-radio:before{content:"radio_button_unchecked"}.hn-icons.icon-radio_select:before{content:"radio_button_checked"}.hn-icons.icon-search:before{content:"search"}.hn-icons.icon-secure:before{content:"lock"}.hn-icons.icon-signup:before{content:"mail"}.hn-icons.icon-spinner:before{content:""}.hn-icons.icon-star:before{content:"star_border"}.hn-icons.icon-star_half:before{content:"star_half"}.hn-icons.icon-starred:before{content:"star"}.hn-icons.icon-track:before{content:"my_location"}hn-modal {
   position: fixed;
   top: 0px;
   display: flex;
@@ -1247,14 +1250,6 @@ select {
   width: 100%;
   align-items: center;
   --tw-bg-opacity: 0.2;background-color:rgb(55, 55, 55, 0.2);background-color:rgb(55, 55, 55, var(--tw-bg-opacity));
-}@media (min-width: 0px) and (max-width: 639px) {
-
-  hn-modal>.modal-container {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    width: 100%;
-  }
 }hn-modal>.modal-container {
   position: relative;
   z-index: 20;
@@ -1266,8 +1261,6 @@ select {
   margin-top: 24px;
   margin-bottom: 24px;
   height: auto;
-  width: -moz-fit-content;
-  width: fit-content;
   border-radius: 4px;
   border-width: 1px;
   border-color: #8d8d8d;
@@ -1276,6 +1269,12 @@ select {
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}@media (min-width: 0px) and (max-width: 639px) {
+
+  hn-modal>.modal-container {
+    height: 100%;
+    width: 100%;
+  }
 }hn-modal>.modal-container .modal-header {
   border-bottom-width: 2px;
   border-color: #8d8d8d;
@@ -1298,13 +1297,13 @@ select {
   align-items: center;
 }hn-modal>.modal-container .modal-header [aria-label=Close] {
   position: absolute;
-  min-height: 44px;
-  min-width: 44px;
+  height: 44px;
+  width: 44px;
 }@media (min-width: 0px) and (max-width: 639px) {
 
   hn-modal>.modal-container .modal-header [aria-label=Close] {
     right: 2px;
-    top: 6px;
+    top: 12px;
   }
 }hn-modal>.modal-container .modal-content {
   position: relative;
@@ -1316,6 +1315,11 @@ select {
   padding-right: 24px;
   padding-top: 24px;
   padding-bottom: 32px;
+}@media (min-width: 0px) and (max-width: 639px) {
+
+  hn-modal>.modal-container .modal-content {
+    max-height: 80%;
+  }
 }hn-modal>.modal-container .modal-footer {
   border-top-width: 1px;
   border-color: #dde3e6;
