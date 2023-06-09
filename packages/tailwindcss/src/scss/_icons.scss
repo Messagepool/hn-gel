@@ -12,9 +12,10 @@ $icon-mapping : (
   'check': 'check',
   'checkbox': 'check_box_outline_blank',
   'checked': 'check_box',
+  'close': 'close',
   'collapse': 'keyboard_arrow_up',
   'credit_card': 'credit_card',
-  'deliver': 'delivery_dining',
+  'deliver': 'local_shipping',
   'dropdown': 'arrow_drop_down',
   'edit': 'edit',
   'expand': 'keyboard_arrow_down',
@@ -25,6 +26,7 @@ $icon-mapping : (
   'liked': 'favorite',
   'list': 'format_list_bulleted',
   'map': 'map',
+  'remove': 'remove',
   'radio': 'radio_button_unchecked',
   'radio_select': 'radio_button_checked',
   'search': 'search',
@@ -33,22 +35,29 @@ $icon-mapping : (
   'spinner': '',
   'star': 'star_border',
   'star_half': 'star_half',
+  'starred': 'star',
   'track': 'my_location'
 );
 
-.hn-icon {
+.hn-icons {
   @include material-icons-font-class('Material Icons');
+  @apply sm:text-[48px] sm:w-12;
+  @apply md:text-[36px] lg:w-8;
+  @apply lg:text-[24px] lg:w-6;
+  @apply xl:text-[18px] xl:w-4;
+  @apply mx-1;
+
   &:before {
     @apply inline-block w-4;
   }
-}
 
-@each $name, $icon in $icon-mapping {
-  .hn-icon-#{$name} {
-    @extend .hn-icon;
+  .btn > & {
+    @apply align-middle;
+  }
 
-    &:before {
-      content: "#{$icon}";
+  @each $name, $icon in $icon-mapping {
+    &.icon-#{$name}:before {
+      content: '#{$icon}'
     }
   }
 }
