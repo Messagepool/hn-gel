@@ -14,6 +14,7 @@
     --form-input-small-height: #{$form-input-small-height};
     --form-input-small-padding: #{$form-input-small-padding};
     --form-checkbox-small-height: #{$form-checkbox-small-height};
+    --form-checkbox-regular-height: #{$form-checkbox-regular-height};
   }
 
   html {
@@ -24,4 +25,7 @@
 @layer components {
   @import './buttons';
   @import './forms';
+  @import './grid';
+  @import './icons';
+  @import './modal';
 }

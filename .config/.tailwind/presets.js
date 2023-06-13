@@ -7,7 +7,7 @@ const colorPresets = [
   'decorative',
   'tint',
   'light',
-  'alertinteractive',
+  'interactive',
   'alertinfo',
   'alertsuccess',
   'alertcritical',
@@ -33,10 +33,15 @@ colorPresets.forEach((preset) => {
   colors[preset] = {
     DEFAULT: `var(--color-${preset})`,
   };
+  
   for (let i = 100; i <= 900; i += 100) {
     colors[preset][i] = `var(--color-${preset}-${i})`;
   }
 });
+
+const screens = {
+  'xs' : { 'min': '0px', 'max': '639px' }
+};
 
 module.exports = {
   theme: {
@@ -44,6 +49,7 @@ module.exports = {
       colors,
       fontFamily,
       fontSize,
+      screens
     },
   },
   plugins: [

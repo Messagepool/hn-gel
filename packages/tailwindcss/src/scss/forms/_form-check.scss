@@ -1,54 +1,43 @@
 @use "./../mixins" as mixins;
 
 input[type=checkbox].form-checkbox {
-  @apply border-2 rounded-sm mr-2 p-0;
+  @apply border-2 rounded-sm mr-1 p-0 h-[var(--form-checkbox-small-height)];
+  @apply xs:mr-2 xs:h-[var(--form-checkbox-regular-height)];
 
   &:disabled {
     @apply border-decorative;
   }
 
   &:checked {
-    @apply border-alertinteractive;
+    @apply border-interactive;
   }
 
   &:focus {
-    @apply border-alertinteractive shadow-2xl;
+    @apply border-interactive shadow-2xl;
   }
 
   &:invalid {
     @apply border-alertcritical text-alertcritical;
   }
-}
-
-// TODO: Apply small size by media screens instead
-input[type=checkbox].form-checkbox--small {
-  @extend .form-checkbox;
-  @apply mr-1;
-  height: var(--form-checkbox-small-height);
 }
 
 input[type=radio].form-radio {
+  @apply border-2 align-middle mr-1 p-1 xs:p-2;
+
   &:disabled {
     @apply border-decorative;
   }
 
   &:checked {
-    @apply border-alertinteractive;
+    @apply border-interactive;
   }
 
   &:focus {
-    @apply border-alertinteractive shadow-2xl;
+    @apply border-interactive shadow-2xl;
   }
 
   &:invalid {
     @apply border-alertcritical text-alertcritical;
   }
 
-  @apply border-2 align-middle mr-1 p-2;
-}
-
-// TODO: Apply small size by media screens instead
-input[type=radio].form-radio--small {
-  @extend .form-radio;
-  @apply p-1;
 }
