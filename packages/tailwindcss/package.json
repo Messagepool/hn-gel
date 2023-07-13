@@ -1,5 +1,5 @@
 {
-  "name": "@hn-gel-system/tailwindcss",
+  "name": "@hndigital/tailwindcss",
   "version": "1.0.0",
   "description": "",
   "main": "src/js/main.js",
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@hn-gel-system/common": "^1.0.0",
+    "@hndigital/common": "^1.0.0",
     "material-icons": "^1.13.7"
   }
 }

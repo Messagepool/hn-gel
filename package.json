@@ -1,5 +1,5 @@
 {
-  "name": "@hn-gel-system/monorepo",
+  "name": "@hndigital/hn-gel",
   "version": "1.0.0",
   "main": "dist/hn-styles.css",
   "scripts": {
