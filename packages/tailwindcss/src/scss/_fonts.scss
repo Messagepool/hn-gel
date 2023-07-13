@@ -1,21 +1,21 @@
 @include font-face(
   $font-avenir,
   // '../../common/fonts/Avenir/Avenir',
-  '@hn-gel-system/common/fonts/Avenir/Avenir',
+  '@hndigital/common/fonts/Avenir/Avenir',
   $font-avenir-weight,
   normal,
   ttc
 );
 @include font-face(
   $font-lato-regular,
-  '@hn-gel-system/common/fonts/Lato/Lato-Regular',
+  '@hndigital/common/fonts/Lato/Lato-Regular',
   $font-lato-regular-weight,
   normal,
   ttf
 );
 @include font-face(
   $font-lato-bold,
-  '@hn-gel-system/common/fonts/Lato/Lato-Bold',
+  '@hndigital/common/fonts/Lato/Lato-Bold',
   $font-lato-bold-weight,
   normal,
   ttf

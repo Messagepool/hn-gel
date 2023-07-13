@@ -1,5 +1,5 @@
 {
-  "name": "@hn-gel-system/bootstrap",
+  "name": "@hndigital/bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "./src/js/main.js",
