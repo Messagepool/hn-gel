@@ -1,6 +1,6 @@
 {
   "name": "@hndigital/hn-gel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/hn-styles.css",
   "scripts": {
     "build": "webpack --config=./.config/webpack/webpack.config.prod.js",
