@@ -1,6 +1,5 @@
 @include font-face(
   $font-avenir,
-  // '../../common/fonts/Avenir/Avenir',
   '@hndigital/common/fonts/Avenir/Avenir',
   $font-avenir-weight,
   normal,
@@ -20,5 +19,3 @@
   normal,
   ttf
 );
-
-// @import 'material-icons/iconfont/material-icons.css';
