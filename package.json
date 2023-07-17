@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "main": "dist/hn-styles.css",
   "scripts": {
-    "build": "webpack --config=./.config/webpack/webpack.config.prod.js",
+    "build": "NODE_ENV=production webpack --config=./.config/webpack/webpack.config.prod.js",
     "build:watch": "webpack --watch --config=./.config/webpack/webpack.config.dev.js",
     "format": "prettier --config=./.config/.prettierrc.json --ignore-path=.config/.prettierignore --write ."
   },
@@ -14,9 +14,11 @@
     "@tailwindcss/typography": "^0.5.9",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "cssnano": "^6.0.1",
     "material-icons": "^1.13.6",
     "mini-css-extract-plugin": "^2.7.5",
-    "postcss": "^8.4.23",
+    "postcss": "^8.4.26",
     "postcss-loader": "^7.3.0",
     "postcss-preset-env": "^8.3.2",
     "prettier": "^2.8.8",
@@ -24,6 +26,7 @@
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
     "tailwindcss": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.82.1",
     "webpack-cli": "^5.1.1",
     "webpack-merge": "^5.8.0"
