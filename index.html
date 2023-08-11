@@ -7,7 +7,7 @@
     <title>HN Styles</title>
     <link rel="stylesheet" href="packages/tailwindcss/dist/hn-tailwind.css" />
   </head>
-  <body>
+  <body class="m-5">
     <h1>Heading 1</h1>
     <input type="checkbox" class="form-checkbox rounded text-pink-500" />
     <hr />
@@ -169,34 +169,86 @@
     </div>
     <hr>
     <hr>
-    <h2 class="text-lg">Grid</h2>
+
+    <h2 class="text-lg">Flexbox</h2>
+    <h3 class="text-xl"></h3>
+    <p>8px spacing</p>
+    <div class="flex flex-wrap gap-2xs">
+      <div class="border border-brand p-2 w-[200px]">01</div>
+      <div class="border border-brand p-2 w-[200px]">02</div>
+      <div class="border border-brand p-2 w-[200px]">03</div>
+      <div class="border border-brand p-2 w-[200px]">04</div>
+      <div class="border border-brand p-2 w-[200px]">05</div>
+    </div>
+    <p>16px spacing</p>
+    <div class="flex flex-wrap gap-2xs md:gap-sm lg:gap-sm">
+      <div class="border border-brand p-2 w-[200px]">01</div>
+      <div class="border border-brand p-2 w-[200px]">02</div>
+      <div class="border border-brand p-2 w-[200px]">03</div>
+      <div class="border border-brand p-2 w-[200px]">04</div>
+      <div class="border border-brand p-2 w-[200px]">05</div>
+    </div>
+    <p>24px spacing</p>
+    <div class="flex flex-wrap gap-2xs md:gap-md lg:gap-lg">
+      <div class="border border-brand p-2 w-[200px]">01</div>
+      <div class="border border-brand p-2 w-[200px]">02</div>
+      <div class="border border-brand p-2 w-[200px]">03</div>
+      <div class="border border-brand p-2 w-[200px]">04</div>
+      <div class="border border-brand p-2 w-[200px]">05</div>
+    </div>
+    <hr>
+    <hr>
+    <h2 class="text-lg">Full Column Grid w/ outside margin</h2>
     <h3 class="text-xl"></h3>
 
-    <div class="hn-grid text-center">
-      <div class="hn-col text-light bg-brand py-4">01</div>
-      <div class="hn-col text-light bg-brand py-4">02</div>
-      <div class="hn-col text-light bg-brand py-4">03</div>
-      <div class="hn-col text-light bg-brand py-4">04</div>
-      <div class="hn-col text-light bg-brand py-4">05</div>
-      <div class="hn-col text-light bg-brand py-4">06</div>
-      <div class="hn-col text-light bg-brand py-4">07</div>
-      <div class="hn-col text-light bg-brand py-4">08</div>
-      <div class="hn-col text-light bg-brand py-4">09</div>
-      <div class="hn-col text-light bg-brand py-4">10</div>
-      <div class="hn-col text-light bg-brand py-4">11</div>
-      <div class="hn-col text-light bg-brand py-4">12</div>
-      <div class="hn-col text-light bg-brand py-4">13</div>
-      <div class="hn-col text-light bg-brand py-4">14</div>
-      <div class="hn-col text-light bg-brand py-4">15</div>
-      <div class="hn-col text-light bg-brand py-4">16</div>
-      <div class="hn-col text-light bg-brand py-4">17</div>
-      <div class="hn-col text-light bg-brand py-4">18</div>
-      <div class="hn-col text-light bg-brand py-4">19</div>
-      <div class="hn-col text-light bg-brand py-4">20</div>
-      <div class="hn-col text-light bg-brand py-4">21</div>
-      <div class="hn-col text-light bg-brand py-4">22</div>
-      <div class="hn-col text-light bg-brand py-4">23</div>
-      <div class="hn-col text-light bg-brand py-4">24</div>
+    <div class="grid grid-cols-12 gap-xs my-sm text-center">
+      <div class="text-light bg-brand py-4">01</div>
+      <div class="text-light bg-brand py-4">02</div>
+      <div class="text-light bg-brand py-4">03</div>
+      <div class="text-light bg-brand py-4">04</div>
+      <div class="text-light bg-brand py-4">05</div>
+      <div class="text-light bg-brand py-4">06</div>
+      <div class="text-light bg-brand py-4">07</div>
+      <div class="text-light bg-brand py-4">08</div>
+      <div class="text-light bg-brand py-4">09</div>
+      <div class="text-light bg-brand py-4">10</div>
+      <div class="text-light bg-brand py-4">11</div>
+      <div class="text-light bg-brand py-4">12</div>
+    </div>
+
+    <br/>
+
+    <h2 class="text-lg">Four Column Grid w/ outside padding</h2>
+    <h3 class="text-xl"></h3>
+
+    <div class="grid grid-cols-4 gap-md py-xs text-center">
+      <div class="text-light bg-brand py-4">01</div>
+      <div class="text-light bg-brand py-4 ">02</div>
+      <div class="text-light bg-brand py-4">03</div>
+      <div class="text-light bg-brand py-4">04</div>
+      <div class="text-light bg-brand py-4">05</div>
+      <div class="text-light bg-brand py-4">06</div>
+      <div class="text-light bg-brand py-4">07</div>
+      <div class="text-light bg-brand py-4">08</div>
+    </div>
+
+    <br/>
+    <h2 class="text-lg">Grid with Col Span w/ outside padding and margin</h2>
+
+    <div class="grid grid-cols-3 gap-md text-center">
+      <div class="text-light bg-brand py-4 col-span-2">
+        <p>01</p>
+      </div>
+      <div class="grid gap-md text-center">
+        <div class="text-light bg-brand py-4">02</div>
+        <div class="text-light bg-brand py-4 h-[150px]">03</div>
+      </div>
+      <div class="text-light bg-brand py-4">
+        <p>04</p>
+      </div>
+      <div class="text-light bg-brand py-4 col-span-2">
+        <p>05</p>
+      </div>
     </div>
 
     <hr>
