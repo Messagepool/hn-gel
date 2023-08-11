@@ -40,12 +40,12 @@ colorPresets.forEach((preset) => {
 });
 
 const spacing = {
-  xs:'4px',
-  '2xs':'8px',
+  '2xs':'4px',
+  xs:'8px',
   sm:'16px',
   md:'24px',
-  lg:'24px',
-  xl:'32px'
+  lg:'32px',
+  xl:'48px'
 }
 
 const screens = {
