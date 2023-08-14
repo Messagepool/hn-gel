@@ -39,8 +39,20 @@ colorPresets.forEach((preset) => {
   }
 });
 
+const spacing = {
+  '2xs':'4px',
+  xs:'8px',
+  sm:'16px',
+  md:'24px',
+  lg:'32px',
+  xl:'48px'
+}
+
 const screens = {
-  'xs' : { 'min': '0px', 'max': '639px' }
+  'xs' : { 'min': '0px', 'max': '639px' },
+  'sm' : { 'min': '640px', 'max': '767px' },
+  'md' : { 'min': '768px', 'max': '1023px' },
+  'lg' : '1024px'
 };
 
 module.exports = {
@@ -49,7 +61,8 @@ module.exports = {
       colors,
       fontFamily,
       fontSize,
-      screens
+      screens,
+      spacing
     },
   },
   plugins: [
