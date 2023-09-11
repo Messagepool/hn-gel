@@ -26,6 +26,7 @@ $fontsize-lineheight-lg: 2.25rem;
 
 /** colors **/
 $color-brand: #005b9c;
+$color-brand-50: #e5eef5;
 $color-brand-100: #ccdeeb;
 $color-brand-200: #99bdd7;
 $color-brand-300: #669dc4;
@@ -52,6 +53,7 @@ $color-presets: (
 
 $color-brands: (
   'default': $color-brand,
+  '50': $color-brand-50,
   '100': $color-brand-100,
   '200': $color-brand-200,
   '300': $color-brand-300,
@@ -64,6 +66,7 @@ $color-brands: (
 );
 
 $color-primary: #373737;
+$color-primary-50: #ebebeb;
 $color-primary-100: #d7d7d7;
 $color-primary-200: #afafaf;
 $color-primary-300: #878787;
@@ -76,6 +79,7 @@ $color-primary-900: #0b0b0b;
 
 $color-primaries: (
   'default': $color-primary,
+  '50': $color-primary-50,
   '100': $color-primary-100,
   '200': $color-primary-200,
   '300': $color-primary-300,
@@ -88,18 +92,20 @@ $color-primaries: (
 );
 
 $color-secondary: #5e6f77;
+$color-secondary-50: #eff0f1;
 $color-secondary-100: #dfe2e4;
 $color-secondary-200: #bfc5c9;
 $color-secondary-300: #9ea9ad;
 $color-secondary-400: #7e8c92;
 $color-secondary-500: #5e6f77;
 $color-secondary-600: #4b595f;
-$color-secondary-700: #38437f;
+$color-secondary-700: #384347;
 $color-secondary-800: #262c30;
 $color-secondary-900: #131618;
 
 $color-secondaries: (
   'default': $color-secondary,
+  '50':$color-secondary-50,
   '100': $color-secondary-100,
   '200': $color-secondary-200,
   '300': $color-secondary-300,
@@ -112,6 +118,7 @@ $color-secondaries: (
 );
 
 $color-ui: #8d8d8d;
+$color-ui-50: #f3f3f3;
 $color-ui-100: #e8e8e8;
 $color-ui-200: #d1d1d1;
 $color-ui-300: #bbbbbb;
@@ -124,6 +131,7 @@ $color-ui-900: #1c1c1c;
 
 $color-uis: (
   'default': $color-ui,
+  '50': $color-ui-50,
   '100': $color-ui-100,
   '200': $color-ui-200,
   '300': $color-ui-300,
@@ -136,6 +144,7 @@ $color-uis: (
 );
 
 $color-decorative: #dde3e6;
+$color-decorative-50: #fcfcfd;
 $color-decorative-100: #f8f9fa;
 $color-decorative-200: #f1f4f5;
 $color-decorative-300: #ebeef0;
@@ -148,6 +157,7 @@ $color-decorative-900: #2c2d2e;
 
 $color-decoratives: (
   'default': $color-decorative,
+  '50': $color-decorative-50,
   '100': $color-decorative-100,
   '200': $color-decorative-200,
   '300': $color-decorative-300,
@@ -160,10 +170,11 @@ $color-decoratives: (
 );
 
 $color-tint: #f3f4f5;
+$color-tint-50: #fefefe;
 $color-tint-100: #fdfdfd;
 $color-tint-200: #fafbfb;
 $color-tint-300: #f8f8f9;
-$color-tint-400: #f3f6f7;
+$color-tint-400: #f5f6f7;
 $color-tint-500: #f3f4f5;
 $color-tint-600: #c2c3c4;
 $color-tint-700: #929293;
@@ -172,6 +183,7 @@ $color-tint-900: #313131;
 
 $color-tints: (
   'default': $color-tint,
+  '50': $color-tint-50,
   '100': $color-tint-100,
   '200': $color-tint-200,
   '300': $color-tint-300,
@@ -184,6 +196,7 @@ $color-tints: (
 );
 
 $color-light: #ffffff;
+$color-light-50: #ffffff;
 $color-light-100: #ffffff;
 $color-light-200: #ffffff;
 $color-light-300: #ffffff;
@@ -196,6 +209,7 @@ $color-light-900: #333333;
 
 $color-lights: (
   'default': $color-light,
+  '50': $color-light-50,
   '100': $color-light-100,
   '200': $color-light-200,
   '300': $color-light-300,
@@ -208,6 +222,7 @@ $color-lights: (
 );
 
 $color-interactive: #005b9c;
+$color-interactive-50: #e5eef5;
 $color-interactive-100: #ccdeeb;
 $color-interactive-200: #99bdd7;
 $color-interactive-300: #669dc4;
@@ -220,6 +235,7 @@ $color-interactive-900: #00121f;
 
 $color-interactives: (
   'default': $color-interactive,
+  '50': $color-interactive-50,
   '100': $color-interactive-100,
   '200': $color-interactive-200,
   '300': $color-interactive-300,
@@ -232,6 +248,7 @@ $color-interactives: (
 );
 
 $color-alertinfo: #005b9c;
+$color-alertinfo-50: #e5eef5;
 $color-alertinfo-100: #ccdeeb;
 $color-alertinfo-200: #99bdd7;
 $color-alertinfo-300: #669dc4;
@@ -244,6 +261,7 @@ $color-alertinfo-900: #00121f;
 
 $color-alertinfos: (
   'default': $color-alertinfo,
+  '50': $color-alertinfo-50,
   '100': $color-alertinfo-100,
   '200': $color-alertinfo-200,
   '300': $color-alertinfo-300,
@@ -256,6 +274,7 @@ $color-alertinfos: (
 );
 
 $color-alertsuccess: #318500;
+$color-alertsuccess-50: #eaf3e5;
 $color-alertsuccess-100: #accd99;
 $color-alertsuccess-200: #83b767;
 $color-alertsuccess-300: #83b666;
@@ -268,6 +287,7 @@ $color-alertsuccess-900: #0a1b00;
 
 $color-alertsuccesses: (
   'default': $color-alertsuccess,
+  '50': $color-alertsuccess-50,
   '100': $color-alertsuccess-100,
   '200': $color-alertsuccess-200,
   '300': $color-alertsuccess-300,
@@ -280,6 +300,7 @@ $color-alertsuccesses: (
 );
 
 $color-alertcritical: #cb1829;
+$color-alertcritical-50: #fae7e9;
 $color-alertcritical-100: #f5d1d4;
 $color-alertcritical-200: #eaa3a9;
 $color-alertcritical-300: #e0747f;
@@ -292,6 +313,7 @@ $color-alertcritical-900: #290508;
 
 $color-alertcriticals: (
   'default': $color-alertcritical,
+  '50': $color-alertcritical-50,
   '100': $color-alertcritical-100,
   '200': $color-alertcritical-200,
   '300': $color-alertcritical-300,
