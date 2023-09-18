@@ -32,6 +32,7 @@ const fontSize = {
 colorPresets.forEach((preset) => {
   colors[preset] = {
     DEFAULT: `var(--color-${preset})`,
+    '50': `var(--color-${preset}-50)`,
   };
   
   for (let i = 100; i <= 900; i += 100) {
