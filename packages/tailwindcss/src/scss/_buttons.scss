@@ -27,3 +27,100 @@
   @extend .btn;
   @apply py-1 px-2
 }
+
+.hn-btn{
+  @apply w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light text-center cursor-pointer px-[25px] py-[13px] inline-block text-center leading-[24px] text-[16px] rounded;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  white-space: nowrap;
+  outline: 0;
+  line-height: 24px;
+
+  &-primary {
+    @apply bg-brand text-xs hover:bg-brand-600 hover:text-light;
+  }
+
+  &-secondary {
+    @apply hover:text-light;
+    background: $color-tint;
+    &:hover{
+      background: $color-tint-600;
+
+    }
+  }
+
+
+  // sizes
+  &--small {
+    font-size: 14px;
+    padding: 25px 10px;
+  }
+  &--regular {
+    font-size: 16px;
+  }
+
+
+
+  &-add-to-cart {
+    @apply bg-alertsuccess-500 w-full uppercase text-xs hover:bg-alertsuccess-600 hover:text-light font-bold;
+  }
+
+  &-find-in-store {
+    @apply w-full text-xs uppercase;
+    color: $color-primary;
+    border: 1px solid $color-ui;
+    background: $color-tint;
+    &:hover{
+      background: $color-tint-600;
+    }
+  }
+
+  &-search {
+    @apply bg-alertsuccess hover:bg-alertsuccess-400 h-11 text-light-100 font-bold xs:w-[6.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[7.5rem] xl:w-[7.5rem] rounded-r-lg text-[0.875rem] inline-flex justify-center items-center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-signin {
+    @apply btn rounded uppercase text-sm uppercase;
+  }
+
+  &-register {
+    @apply bg-brand border-brand;
+  }
+
+  &-browse-all-categories {
+    @apply bg-brand border-brand;
+  }
+
+  &-browse-all-categories {
+    @apply bg-brand;
+  }
+
+  &-proceed-to-checkout {
+    @apply bg-brand;
+  }
+
+  &-submit {
+    @apply bg-brand;
+  }
+
+  &-with-icon {
+    @apply bg-brand;
+  }
+
+  &-outline {
+    @apply bg-brand;
+  }
+
+
+}
+
+.hn-gel-container{
+  @apply rounded-lg border dark:border-white/10 p-4 my-5 justify-center;
+  div{
+   align-items: flex-end;
+  }
+  &-250{
+    max-width: 250px;
+  }
+}
