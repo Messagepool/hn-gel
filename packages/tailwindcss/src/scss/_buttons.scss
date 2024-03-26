@@ -25,53 +25,48 @@
 // TODO: Should i removed this as well?
 .btn--small {
   @extend .btn;
-  @apply py-1 px-2
+  @apply py-1 px-2;
 }
 
 .hn-btn{
   @apply w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light text-center cursor-pointer px-[25px] py-[13px] inline-block text-center leading-[24px] text-[16px] rounded;
+
   transition: all .3s cubic-bezier(.645,.045,.355,1);
   white-space: nowrap;
   outline: 0;
-  line-height: 24px;
 
   &-primary {
-    @apply bg-brand text-xs hover:bg-brand-600 hover:text-light;
+    @apply bg-brand hover:bg-brand-600 hover:text-light;
   }
 
   &-secondary {
-    @apply hover:text-light;
+    @apply text-primary;
     background: $color-tint;
+    border: 1px solid $color-ui;
     &:hover{
-      background: $color-tint-600;
+      background: rgba(0,0,0,0.2);
 
     }
   }
 
-
-  // sizes
   &--small {
-    font-size: 14px;
-    padding: 25px 10px;
+    padding: 10px 9px;
   }
-  &--regular {
-    font-size: 16px;
-  }
-
-
 
   &-add-to-cart {
-    @apply bg-alertsuccess-500 w-full uppercase text-xs hover:bg-alertsuccess-600 hover:text-light font-bold;
+    @extend .hn-btn-primary;
+    @apply bg-alertsuccess text-xs uppercase w-full hover:bg-alertsuccess-600;
   }
-
+  
   &-find-in-store {
+    @extend .hn-btn-secondary;
     @apply w-full text-xs uppercase;
     color: $color-primary;
     border: 1px solid $color-ui;
     background: $color-tint;
-    &:hover{
-      background: $color-tint-600;
-    }
+      &:hover{
+        background: $color-tint-600;
+      }
   }
 
   &-search {
@@ -116,10 +111,7 @@
 }
 
 .hn-gel-container{
-  @apply rounded-lg border dark:border-white/10 p-4 my-5 justify-center;
-  div{
-   align-items: flex-end;
-  }
+  @apply flex rounded-lg border dark:border-white/10 p-4 my-5 justify-center flex justify-center space-x-2 items-end;
   &-250{
     max-width: 250px;
   }
