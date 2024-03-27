@@ -36,7 +36,7 @@
 }
 
 .hn-form-input{
-  @apply block border-2 rounded-lg text-primary placeholder-secondary focus:shadow-xl py-3 px-3;
+  @apply block border-2 rounded-lg text-primary placeholder-secondary focus:shadow-xl py-2 px-2;
   @apply w-full;
 
   &:disabled {
@@ -54,4 +54,55 @@
   &:invalid {
     @apply border-alertcritical text-alertcritical;
   }
+
+
+  &-floating-label{
+    position: relative;
+    &--field{
+      @apply block w-full py-2 px-2;
+      // display: block;
+      // width: 100%;
+      // padding: 0.75rem 0.75rem;
+      // font-size: 1rem;
+      // font-weight: 400;
+      // line-height: 1.5;
+      color: var(--bs-body-color);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: var(--bs-body-bg);
+      background-clip: padding-box;
+      border: var(--bs-border-width) solid var(--bs-border-color);
+      border-radius: var(--bs-border-radius);
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+     
+    }
+    label{
+      @apply absolute py-2 px-2 text-secondary;
+      // position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      // height: 100%;
+      // padding: 0.75rem 0.75rem;
+      overflow: hidden;
+      text-align: start;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      pointer-events: none;
+      border: var(--bs-border-width) solid transparent;
+      transform-origin: 0 0;
+      transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+    }
+  }
+}
+
+
+
+
+
+.hn-form-input-floating-label>.hn-form-input:focus~label, .hn-form-input-floating-label>.hn-form-input:not(:placeholder-shown)~label {
+  color: rgba(var(--bs-body-color-rgb),.65);
+  transform: scale(.85) translateY(-0.8rem) translateX(0);
 }
