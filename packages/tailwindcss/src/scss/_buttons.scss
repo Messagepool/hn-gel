@@ -70,44 +70,18 @@
   }
 
   &-search {
-    @apply bg-alertsuccess hover:bg-alertsuccess-400 h-11 text-light-100 font-bold xs:w-[6.5rem] sm:w-[6.5rem] md:w-[7.5rem] lg:w-[7.5rem] xl:w-[7.5rem] rounded-r-lg text-[0.875rem] inline-flex justify-center items-center;
+    @extend .hn-btn-primary;
+    @apply bg-alertsuccess text-xs uppercase w-full hover:bg-alertsuccess-600;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-
-  &-signin {
-    @apply btn rounded uppercase text-sm uppercase;
+  
+  &-account {
+    @extend .hn-btn-primary;
+    @apply bg-brand text-sm uppercase w-full hover:bg-alertsuccess-600;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
-
-  &-register {
-    @apply bg-brand border-brand;
-  }
-
-  &-browse-all-categories {
-    @apply bg-brand border-brand;
-  }
-
-  &-browse-all-categories {
-    @apply bg-brand;
-  }
-
-  &-proceed-to-checkout {
-    @apply bg-brand;
-  }
-
-  &-submit {
-    @apply bg-brand;
-  }
-
-  &-with-icon {
-    @apply bg-brand;
-  }
-
-  &-outline {
-    @apply bg-brand;
-  }
-
-
 }
 
 .hn-gel-container{
