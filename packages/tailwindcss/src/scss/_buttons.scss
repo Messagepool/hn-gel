@@ -28,7 +28,7 @@
   @apply py-1 px-2;
 }
 
-.hn-btn{
+.hn-btn {
   @apply w-auto rounded-sm py-2 px-3 justify-center bg-brand text-light text-center cursor-pointer px-[25px] py-[13px] inline-block text-center leading-[24px] text-[16px] rounded;
 
   transition: all .3s cubic-bezier(.645,.045,.355,1);
@@ -43,14 +43,13 @@
     @apply text-primary;
     background: $color-tint;
     border: 1px solid $color-ui;
-    &:hover{
-      background: rgba(0,0,0,0.2);
-
+    &:hover {
+      background: hsla(0, 0%, 0%, 0.2);
     }
   }
 
   &--small {
-    padding: 10px 9px;
+    @apply py-2 px-2;
   }
 
   &-add-to-cart {
@@ -64,23 +63,96 @@
     color: $color-primary;
     border: 1px solid $color-ui;
     background: $color-tint;
-      &:hover{
-        background: $color-tint-600;
-      }
+    &:hover {
+      background: $color-tint-600;
+    }
   }
 
-  &-search {
-    @extend .hn-btn-primary;
-    @apply bg-alertsuccess text-xs uppercase w-full hover:bg-alertsuccess-600;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
+  &-search,
   &-account {
     @extend .hn-btn-primary;
-    @apply bg-brand text-sm uppercase w-full hover:bg-alertsuccess-600;
+    @apply text-xs uppercase w-full hover:bg-alertsuccess-600;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    @if &-account {
+      @apply text-sm;
+    }
+  }
+
+  &-icon,
+  &-close {
+    @apply flex items-center leading-none;
+    .hn-icons {
+      width: auto;
+      font-size: 24px;
+      &--close {
+        @apply font-bold;
+      }
+    }
+    &-close {
+      @extend .hn-btn-icon;
+      @extend .btn--small;
+      @apply font-bold;
+    }
+  }
+
+  &--text {
+    @apply px-2;
+  }
+
+  &-disabled {
+    @apply text-light disabled;
+    background: $color-ui;
+    cursor: not-allowed;
+    &:hover {
+      background: $color-ui;
+    }
+  }
+
+  &-checkout {
+    @apply flex flex-col px-3 bg-white font-bold min-w-[230px] min-h-[105px] justify-start;
+    border: 2px solid #E7E7E7;
+
+    span:nth-child(1) {
+      @apply mb-4 flex items-center;
+      span {
+        @apply flex items-center my-0 hidden;
+        color: #52c41a;
+      }
+    }
+
+    span:nth-child(2),
+    span:nth-child(3) {
+      @apply text-sm;
+      &:nth-child(3) {
+        color: #5F98C1;
+      }
+    }
+    
+    &--delivery {
+      span:nth-child(1){
+        @apply flex items-center;
+      }
+      
+      .hn-btn--text {
+        flex: 1;
+      }
+      .description {
+        color: #BDC4C7;
+      }
+    }
+
+    &--active,
+    &:hover,
+    &:active {
+      @apply bg-white;
+      border: 2px solid #52c41a;
+      span:nth-child(1) {
+        span {
+          @apply flex;
+        }
+      }
+    }
   }
 }
 

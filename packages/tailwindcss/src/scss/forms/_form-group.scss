@@ -1,0 +1,49 @@
+@use './../mixins' as mixins;
+
+
+.hn-input-group {
+    @apply relative flex flex-wrap items-stretch w-full;
+
+    >:not(:first-child) {
+        margin-left: calc(1px * -1);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    >:first-child {
+        margin-right: calc(1px * -1);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &-text {
+        @apply flex items-center py-1.5 px-3 text-xs text-center leading-6 whitespace-nowrap bg-brand text-white;
+    }
+
+    &-form {
+        @apply relative flex-auto w-[1%] min-w-[0] py-1.5 px-3 text-xs font-normal leading-6 appearance-none rounded focus:shadow-xl;
+    }
+}
+
+.hn-form-floating {
+    width: 100%;
+
+    &>.form-control {
+        @apply relative flex-auto w-[1%] min-w-[0] py-1.5 px-3 text-xs font-normal leading-6 appearance-none rounded focus:shadow-xl;
+
+        padding: 1rem .75rem;
+        height: calc(3.5rem + calc(1px * 2));
+        min-height: calc(3.5rem + calc(1px * 2));
+        line-height: 1.25;
+
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #86b7fe;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+            padding-top: 1.625rem;
+            padding-bottom: .625rem;
+        }
+    }
+}
